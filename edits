@@ -41,6 +41,7 @@ USA
                 <token case_sensitive="yes">ling</token>
             </pattern>
             <message>Did you mean <suggestion>long</suggestion>?</message>
+            (Incorrect word)
             <example correction="long">See you all there - this is <marker>ling</marker> overdue.</example>
         </rule>
         <rule id="WAN_T" name="wan't (want)">
@@ -51,6 +52,7 @@ USA
                 <token regexp="yes">t|ted</token>
             </pattern>
             <message>Did you mean <suggestion>\1\3</suggestion>?</message>
+            (Incorrect word)
             <example correction='want'>But I <marker>wan't</marker> to suggest something else.</example>
             <example correction='wanted'>But I <marker>wan'ted</marker> to suggest something else.</example>
         </rule>
@@ -62,6 +64,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>recent</suggestion>?</message>
+            (Incorrect word)
             <example correction='recent'>The country has so far not changed its <marker>re cent</marker> five-year plan.</example>
         </rule>
         <rule id="IF_WHICH" name="if which">
@@ -70,6 +73,7 @@ USA
                 <token>which</token>
             </pattern>
             <message><suggestion>which</suggestion> should not follow <suggestion>if</suggestion>. Choose either one. Or did you forget a comma?</message>
+            (non-standard phrase)
             <suggestion>if, which</suggestion>
             <example correction='which|if|if, which'>We cannot know <marker>if which</marker> functionality gets tested.</example>
             <example correction='which|if|if, which'>If and only <marker>if which</marker> direction is which? </example>
@@ -83,6 +87,7 @@ USA
                 <token>that</token>
             </pattern>
             <message>Use <suggestion>due to</suggestion> or <suggestion>because of</suggestion> to fix spelling and readability of this sentence.</message>
+            (Incorrect word)
             <url>https://public.wsu.edu/~brians/errors/dueto.html</url>
             <example correction='Due to|Because of'><marker>Do to the fact that</marker> the MTA has burned through leaders at a rate of nearly one per year over the last six years, ...</example>
             <example>Due to</example>
@@ -106,6 +111,7 @@ USA
                 <token regexp="yes">minuets?</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1" regexp_match="minuet" regexp_replace="minute"/></suggestion>?</message>
+            (Incorrect word)
             <example correction="minutes">The main plaza and town is located ten <marker>minuets</marker> walking distance from the beach.</example>
             <example correction="minute">The main plaza and town is located one <marker>minuet</marker> walking distance from the beach.</example>
             <example>Minuet for piano in G major, WoO 10/2 - Ludwig van Beethoven</example>
@@ -120,6 +126,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>lots</suggestion>?</message>
+            (Incorrect word)
             <example correction="lots">There was <marker>lot's</marker> of stuff.</example>
         </rule>
         <rule id="GOOD_NEWS" name="the good new (news) is ...">
@@ -133,6 +140,7 @@ USA
                 <token>that</token>
             </pattern>
             <message>Did you mean <suggestion>news</suggestion>?</message>
+            (Incorrect word)
             <example correction="news">The bad <marker>new</marker> is that it doesn't work.</example>
             <example>The bad <marker>news</marker> is that it doesn't work.</example>
         </rule>
@@ -151,6 +159,7 @@ USA
                 <token>but</token>
             </pattern>
             <message>Did you mean <suggestion>a bit</suggestion>?</message>
+            (Incorrect word)
             <example correction="a bit">So I confused things <marker>a but</marker> and it was Kai who had planned that.</example>
         </rule>
         <rule id="TOOL_LONG" name="tool long (too long)">
@@ -162,6 +171,7 @@ USA
                 <token negate="yes">ago</token>
             </pattern>
             <message>Did you mean <suggestion>too long</suggestion>?</message>
+            (Incorrect word)
             <example correction="too long">I was away for <marker>tool long</marker>.</example>
             <example>I was away for too long.</example>
             <example>They opened their tool long ago.</example>
@@ -172,7 +182,7 @@ USA
             <token regexp="yes">th(en|is|at|[eo]se|ere)</token>
           </pattern>
           <message>Possible typo. Did you mean <suggestion>and \2</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (Incorrect word)
           <example correction="and then">Tonight I'm going to eat dinner at Alyssa's <marker>an then</marker> go to Christina's.</example>
           <example>Tonight I'm going to eat dinner at John's and then go home.</example>
         </rule>
@@ -185,7 +195,7 @@ USA
            </pattern>
            <message>This word is normally written together: <suggestion>aha</suggestion>?</message>
            <url>http://www.whichenglish.com/Better-English-Grammar/Online-Usage-Letter-A.html</url>
-           <short>Possible typo</short>
+           <short>Possible typo</short> (Incorrect word)
            <example correction="aha">After that we had an "<marker>ah ha</marker>" moment and that was it.</example>
            <example>We had an aha moment.</example>
         </rule>
@@ -197,7 +207,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>way</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="way">But is there a <marker>was</marker> to work around the problem?</example>
             <example>But is there a way to work around the problem?</example>
         </rule>
@@ -210,7 +220,7 @@ USA
              </pattern>
              <message>Did you mean <suggestion><match no="2" regexp_match=".*r(.*)$" regexp_replace="hangar$1"/></suggestion>?</message>
              <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-             <short>Possible typo</short>
+             <short>Possible typo</short> (Incorrect word)
              <example correction="hangars">These are airplane <marker>hangers</marker>.</example>
               <example>They had a wedding in an airplane hangar.</example>
         </rule>
@@ -225,7 +235,7 @@ USA
                     <token regexp="yes">day|night|week|month|year</token>
                 </pattern>
                 <message>Did you mean <suggestion>all through</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="All through"><marker>All though</marker> the day: a song by Anita O'Day.</example>
                 <example>I enjoyed this all through the night.</example>
           </rule>
@@ -238,7 +248,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>although</suggestion>?</message>
                 <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="Although"><marker>All though</marker> I liked the book, I had to stop reading it.</example>
                 <example>Best of all though, the review will be great.</example>
             </rule>
@@ -253,7 +263,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion>known</suggestion>?</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="known">He is also <marker>know</marker> as the first Chechen writer.</example>
             <example>He is also known for his beautiful mustache.</example>
         </rule>
@@ -265,7 +275,7 @@ USA
           </pattern>
           <message>Did you mean <suggestion>as opposed to</suggestion>?</message>
           <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (Incorrect word)
           <example correction="as opposed to">Professional sports, <marker>as oppose to</marker> amateur sports , are sport s in which athletes receive payment for their performance</example>
           <example>Professional sports, as opposed to amateur sports , are sport s in which athletes receive payment for their performance</example>
         </rule>
@@ -279,7 +289,7 @@ USA
                 <token><exception postag="IN|RP|DT|SENT_END" postag_regexp="yes"/><exception>what</exception></token>
             </pattern>
             <message>Did you mean <suggestion>our</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="our">We evaluated <marker>out</marker> method by running RASP.</example>
             <example>We evaluated our method by running RASP.</example>
             <example>If we take out India and China...</example>
@@ -292,7 +302,7 @@ USA
                 <token regexp="yes">should|could</token>
             </pattern>
             <message>Did you mean <suggestion>you</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
              <example correction="you">If it's running, <marker>your</marker> should deactivate it.</example>
         </rule>
         <rule id="THE_SOME_DAY" name="the some (same) day">
@@ -303,7 +313,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>same</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="same">It happened on the <marker>some</marker> day.</example>
             <example>It happened on the same day.</example>
             <example>The Some Mothers Do 'Ave 'Em Episode Guide</example>
@@ -317,7 +327,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>use</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="use">He made <marker>us</marker> of the new tools.</example>
         </rule>
         <rule id="ON_OF_THE" name="on (one) of the most/least/...">
@@ -328,7 +338,7 @@ USA
                 <token regexp="yes">more|most|less|least|best|worst</token>
             </pattern>
             <message>Did you mean <suggestion>one</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="one">It's <marker>on of the most</marker> popular songs.</example>
             <example>It's <marker>one</marker> of the most popular songs.</example>
         </rule>
@@ -342,7 +352,7 @@ USA
           </pattern>
           <message>Possible typo. Did you mean <suggestion>allowed to</suggestion>?</message>
           <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (Incorrect word)
           <example>We are allowed to talk.</example>
           <example correction="allowed to">Who is <marker>aloud to</marker> get information from your mail?</example>
         </rule>
@@ -358,7 +368,7 @@ USA
             </pattern>
             <message>Possible typo. Did you mean <suggestion>a part \3</suggestion> or <suggestion>apart from</suggestion>?</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>I'd like to be a part of your team.</example>
             <example correction="a part of|apart from">I'd like to be <marker>apart of</marker> your team.</example>
             <example correction="a part of|apart from">Nannes is now <marker>apart of</marker> the 89.1FM ABC Grandstand Cricket commentary team.</example>
@@ -388,7 +398,7 @@ USA
             </pattern>
             <message>Possible typo. Did you mean <suggestion>apart from</suggestion>?</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>Lebanon's freedoms set it apart from other Arab states.</example>
             <example correction="apart from">Christianity was set <marker>apart form</marker> other religions.</example>
         </rule>
@@ -400,7 +410,7 @@ USA
             </marker>
             </pattern>
             <message>Did you mean <suggestion>whether</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>I asked whether it was true.</example>
             <example correction="whether">Don't ask me <marker>wether</marker> it is already decided!</example>
         </rule>
@@ -411,7 +421,7 @@ USA
         </pattern>
         <message>Did you mean <suggestion>break away</suggestion>?</message>
         <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-        <short>Possible typo</short>
+        <short>Possible typo</short> (Incorrect word)
         <example correction="break away">The should <marker>brake away</marker> from Russia.</example>
         <example>They should break away from Russia.</example>
         <example>When you take the hand brake away, the car will stay still if the clutch is in the right position.</example>
@@ -426,7 +436,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion>breathe</suggestion>? '\2' is a noun.</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible grammatical error</short>
+            <short>Possible grammatical error</short> (Incorrect word)
             <example correction="breathe">I could <marker>breath</marker>.</example>
             <example>They breathe slowly.</example>
             </rule>
@@ -441,7 +451,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion>breathe</suggestion>? '\4' is a noun.</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible grammatical error</short>
+            <short>Possible grammatical error</short> (Incorrect word)
             <example correction="breathe">I couldn't <marker>breath</marker>.</example>
             <example>They breathe slowly.</example>
             <example correction="breathe">We can't <marker>breath</marker> under water.</example>
@@ -455,7 +465,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>can not breathe</suggestion>?</message>
                 <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-                <short>Possible grammatical error</short>
+                <short>Possible grammatical error</short> (Incorrect word)
                 <example correction="can not breathe">We <marker>can not breath</marker> under water.</example>
                 <example>We can not breathe under water.</example>
             </rule>
@@ -465,7 +475,7 @@ USA
                 <marker><token>breathe</token></marker>
               </pattern>
               <message>Did you mean <suggestion>breath</suggestion>? 'Breathe' is a verb.</message>
-              <short>Possible grammatical error</short>
+              <short>Possible grammatical error</short> (Incorrect word)
               <example>I can't hold my breath.</example>
               <example correction="breath">I am not going to hold my <marker>breathe</marker> that he will do anything</example>
               <example>Then he had her breathe on the canvas.</example>
@@ -480,7 +490,7 @@ USA
                     </marker>
             </pattern>
             <message>Did you mean <suggestion>date</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>This is the Carmen up to <marker>Data</marker>.</example>
             <example correction="date">The software is not up to <marker>data</marker>.</example>
         </rule>
@@ -493,7 +503,7 @@ USA
                 <token postag='VB'/>
             </pattern>
             <message>Did you mean <suggestion>could</suggestion>?</message>
-            <short>Probable typoe</short>
+            <short>Probable typoe</short> (Incorrect word)
             <example correction="could">This is all he <marker>cold</marker> do.</example>
             <example>This is all he could do.</example>
         </rule>
@@ -504,7 +514,7 @@ USA
             <token>as</token>
           </pattern>
           <message>Did you mean <suggestion>formerly \2 \3</suggestion> (=known earlier under the name of)?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (Incorrect word)
           <example>The artist formerly known as Prince</example>
           <example correction="formerly known as">The artist <marker>formally known as</marker> Prince</example>
         </rule>
@@ -517,7 +527,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>free</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="free">Feel <marker>tree</marker> to add it to the list.</example>
         </rule>
         <rule id="EASIEST_WAS_TO" name="easiest was (way) to">
@@ -529,6 +539,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>way</suggestion>?</message>
+            (Incorrect word)
             <example correction="way">What is the fastest <marker>was</marker> to learn Spanish?</example>
             <example correction="way">What is the easiest <marker>was</marker> to learn Spanish?</example>
         </rule>
@@ -541,7 +552,7 @@ USA
             <token><exception>.</exception></token>
           </pattern>
           <message>A dot is missing here: <suggestion>\1 \2.</suggestion></message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (missing punctuation)
           <example>Thelen et al. 2001</example>
           <example correction="et al.">Thelen <marker>et al</marker> 2001</example>
         </rule>
@@ -553,6 +564,7 @@ USA
                 <token>some</token>
             </pattern>
             <message>Did you mean <suggestion>\1 still the same</suggestion> or <suggestion>\1 still some</suggestion>?</message>
+            (Incorrect word)
             <example correction="are still the same|are still some">That means that tires <marker>are still the some</marker> of the most important components of your vehicle.</example>
             <example correction="is still the same|is still some">But it <marker>is still the some</marker> government.</example>
             <example>That means that tires <marker>are still some</marker> of the most important components of your vehicle.</example>
@@ -568,6 +580,7 @@ USA
                 <token><exception postag="NNS?:.*" postag_regexp="yes"/></token>
             </pattern>
             <message>Probably incorrect use of superlative '\3'. Consider using the comparative form instead: <suggestion><match suppress_misspelled="yes" no="3" postag="JJR"/></suggestion>.</message>
+            (Incorrect word)
             <example correction="nicer">He was even <marker>nicest</marker> after a year.</example>
             <example correction="iller|worse">He was even <marker>worst</marker>.</example>
             <example>He was even worse after a year.</example>
@@ -593,7 +606,7 @@ USA
                 <token negate="yes" regexp="yes" inflected="yes">instruction|method|salon|stroke|studio</token>
             </pattern>
             <message>Did you mean <suggestion><match no="2" regexp_match="massag" regexp_replace="messag"/></suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>That is a new <marker>massage</marker> method.</example>
             <example correction="message">There is an error <marker>massage</marker>.</example>
             <example correction="messages">I sent different <marker>massages</marker>.</example>
@@ -607,7 +620,7 @@ USA
                     <token regexp="yes" inflected="yes">behaviou?r|mode|setting</token>
                 </pattern>
                 <message>Did you mean <suggestion><match no="1" regexp_match="chanc" regexp_replace="chang"/></suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="change">Do not <marker>chance</marker> these settings!</example>
                 <example correction="changes">He always <marker>chances</marker> the behaviour of the application.</example>
             </rule>
@@ -619,7 +632,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion><match no="2" regexp_match="chanc" regexp_replace="chang"/></suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="change">The climate <marker>chance</marker> must be stopped.</example>
             </rule>
         </rulegroup>
@@ -632,7 +645,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>think</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="think">I <marker>thin</marker> you are right.</example>
             <example>How do I <marker>thin</marker> heavier acrylics for Airbrushing?</example>
             <example>How can I <marker>thin</marker> out my face?</example>
@@ -647,7 +660,7 @@ USA
                 <token inflected="no">be</token>
             </pattern>
             <message>Probably you should use a past participle here: <suggestion>supposed</suggestion>.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect tense)
             <example correction="supposed">What jar is this <marker>suppose</marker> to be coming from?</example>
         </rule>
         <rule id="ALL_BE_IT" name="all be it (albeit)">
@@ -671,7 +684,7 @@ USA
                 <token><exception postag="VBG"/></token>
             </pattern>
             <message>Did you mean <suggestion>all for naught</suggestion> (=all for nothing)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>Sorry all for not being in the chat.</example>
             <example correction="all for naught">My farmer pants were <marker>all for not</marker>...</example>
         </rule>
@@ -683,7 +696,7 @@ USA
                 <token>word</token>
             </pattern>
             <message>Did you mean <suggestion>\1 \2 \3 world</suggestion> (=globally)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="all over the world">The company employs over 25 000 people <marker>all over the word</marker>.</example>
             <example>The company employs over 25,000 people all over the world.</example>
         </rule>
@@ -697,7 +710,7 @@ USA
                 <token>,</token>
             </pattern>
             <message>Did you mean <suggestion>in other words</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="In other words"><marker>Another words</marker>, he is an ideal husband.</example>
             <example>In other words, he is an ideal husband.</example>
         </rule>
@@ -708,7 +721,7 @@ USA
                 <token>fourth</token>
             </pattern>
             <message>Did you mean <suggestion>back and forth</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="back and forth">How to move <marker>back and fourth</marker> from linux to xmb?</example>
             <example>How to move back and forth from linux to xmb?</example>
         </rule>
@@ -719,7 +732,7 @@ USA
                 <token>forth</token>
             </pattern>
             <message>Did you mean <suggestion>back and forth</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (non-standard phrase)
             <example correction="back and forth">I've been texting <marker>back in forth</marker> with him for the past 3 days.</example>
             <example>I've been texting back and forth with him for the past 3 days</example>
         </rule>
@@ -735,7 +748,7 @@ USA
                     <token>,</token>
                 </pattern>
                 <message>Did you mean <suggestion>begin</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="begin">To <marker>being</marker> with, she is a Russian spy.</example>
                 <example>To begin with, she's a spy.</example>
             </rule>
@@ -747,7 +760,7 @@ USA
                     <token postag="VBD|VBN" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>being</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="being">I was willing to risk <marker>begin</marker> interrogated about what I was going to do with the information.</example>
                 <example>I was willing to risk being interrogated about what I was going to do with the information.</example>
             </rule>
@@ -758,7 +771,7 @@ USA
                 <token>wire</token>
             </pattern>
             <message>Did you mean <suggestion>barbed wire</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="barbed wire">Building a <marker>bob wire</marker> fence</example>
             <example>Building a barbed wire fence</example>
         </rule>
@@ -769,7 +782,7 @@ USA
                 <token>way</token>
             </pattern>
             <message>Did you mean <suggestion>by the way</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="by the way">And <marker>bye the way</marker>, this program is open source.</example>
         </rule>
         <rulegroup id="CA_PRP" name="ca I (can I)">
@@ -781,6 +794,7 @@ USA
                     <token postag="PRP"/>
                 </pattern>
                 <message>Possible typo. Did you mean <suggestion>can</suggestion>?</message>
+                (misspelling)
                 <example correction="can">What <marker>ca</marker> I do?</example>
                 <example>I live in Los Angeles, CA.</example>
             </rule>
@@ -792,6 +806,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Possible typo. Did you mean <suggestion>can</suggestion>?</message>
+                (misspelling)
                 <example correction="can">You <marker>ca</marker> do it!</example>
                 <example>I live in Los Angeles, CA.</example>
             </rule>
@@ -802,7 +817,7 @@ USA
                 <token>full</token>
             </pattern>
             <message>Did you mean <suggestion>chock-full</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="Chock-full"><marker>Chalk full</marker> of mobile content</example>
             <example>Chock-full of mobile content</example>
         </rule>
@@ -812,7 +827,7 @@ USA
                 <token>yoke</token>
             </pattern>
             <message>Did you mean <suggestion>egg yolk</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word) 
             <example correction="egg yolk">Chocolate mousse with <marker>egg yoke</marker></example>
             <example>Chocolate mousse with egg yolk</example>
         </rule>
@@ -822,7 +837,7 @@ USA
                 <token>all</token>
             </pattern>
             <message>Did you mean <suggestion>et al.</suggestion> (=and others) or <suggestion>at all</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="et al.|at all">In the recent paper by Shakespeare <marker>et all</marker>, it is argued that envy is not unique to primates.</example>
             <example>In the recent paper by Shakespeare <marker>et al.</marker>, it is argued that envy is not unique to primates.</example>
         </rule>
@@ -832,7 +847,7 @@ USA
                 <token inflected="yes" regexp="yes">brow|lash|sight|sore|lid</token>
             </pattern>
             <message>This word is usually spelt together: <suggestion>\1\2</suggestion>.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="eyelids">Calcium deposits on <marker>eye lids</marker></example>
             <example>Calcium deposits on eyelids</example>
         </rule>
@@ -842,7 +857,7 @@ USA
                 <token>sell</token>
             </pattern>
             <message>Did you mean <suggestion>for sale</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="for sale">Current Michigan homes <marker>for sell</marker></example>
             <example>Current Michigan homes for sale</example>
         </rule>
@@ -854,7 +869,7 @@ USA
                     <token>from</token>
                 </pattern>
                 <message>Did you mean <suggestion>in any form</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="in any form">Do not duplicate or redistribute <marker>in any from</marker>.</example>
                 <example>Do not duplicate or redistribute in any form.</example>
             </rule>
@@ -867,7 +882,7 @@ USA
                     <token postag="SENT_END"><exception>?</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>form</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="form">Fill in this <marker>from</marker>.</example>
                 <example>Fill in this form.</example>
                 <example>Where is this from?</example>
@@ -881,7 +896,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>form</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="form">Type in the <marker>from</marker> on the web page.</example>
                 <example>Fill in the form as shown below.</example>
                 <example correction="form">Fill in the <marker>from</marker> as shown below.</example>
@@ -896,7 +911,7 @@ USA
                     <token postag="NN.*" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>from</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="from">I got a letter <marker>form</marker> my friend.</example>
                 <example>I got a letter <marker>form</marker> from my friend.</example>
                 <example>It may form a raceme or a spike.</example>
@@ -914,7 +929,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>exists</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="exists">There <marker>exits</marker> an α-evaluating homomorphism π.</example>
             <example>Then there exists an α-evaluating homomorphism π.</example>
         </rule>
@@ -939,7 +954,7 @@ USA
                 <token><exception regexp='yes'>and|of|[,\.;']</exception></token>
             </pattern>
             <message>Did you mean <suggestion><match no="2"/></suggestion>?</message>
-            <short>Probable typo</short>
+            <short>Probable typo</short> (incorrect adverb)
             <example correction="how">These are also examples of <marker>the how</marker> a woman's perspective can contribute to science.</example>
             <example>These are also examples of how a woman's perspective can contribute to science.</example>
         </rule>
@@ -951,7 +966,7 @@ USA
             <token spacebefore="no" regexp="yes">[md]|ll|ve</token>
           </pattern>
           <message>Did you mean <suggestion>I\2\3</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (capitalization error)
           <example>Now I'm driving.</example>
           <example correction="I'm">No, <marker>i'm</marker> not letting you near my kids.</example>
         </rule>
@@ -963,7 +978,7 @@ USA
             <token postag="MD|VB[PD]" postag_regexp="yes"/>
             </pattern>
           <message>Did you mean <suggestion>I</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (Capitalization error)
           <example>Now I am driving.</example>
           <example>These are: (i) examples; (ii) case studies; (iii) some other things.</example>
           <example correction="I">No, <marker>i</marker> am not letting you near my kids.</example>
@@ -979,7 +994,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion>on \2</suggestion>? This seems to be a day date.</message>
             <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-            <short>Possible grammatical error</short>
+            <short>Possible grammatical error</short> (Preposition error)
             <example correction="On February"><marker>In February</marker> 21, we ate the poison.</example>
             <example>Cuba Gooding Jr. was born on January 2, 1968.</example>
             <example>The following events occurred in January 1900.</example>
@@ -992,7 +1007,7 @@ USA
                 <token>that</token>
             </pattern>
             <message>Did you mean <suggestion>ensure</suggestion> (=make sure)? 'Insure' means 'pay money to insurance company'.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="ensure">Please <marker>insure</marker> that you are registered with us.</example>
             <example>Please insure your car against theft.</example>
         </rule>
@@ -1002,7 +1017,7 @@ USA
                 <token>masse</token>
             </pattern>
             <message>Did you mean <suggestion>en masse</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="en masse">HP Already Shipping Linux <marker>in Masse</marker></example>
             <example>HP Already Shipping Linux En Masse</example>
         </rule>
@@ -1012,7 +1027,7 @@ USA
                 <token>parenthesis</token>
             </pattern>
             <message>Did you mean <suggestion>in parentheses</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (singular/plural error)
             <example correction="in parentheses">This is indicated by the number not <marker>in parenthesis</marker>.</example>
             <example>This is indicated by the number not in parentheses.</example>
         </rule>
@@ -1023,7 +1038,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>\1\2 \3</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="instead of">Can my car really use water <marker>in stead of</marker> gas?</example>
             <example>Can my car really use water instead of gas?</example>
         </rule>
@@ -1033,7 +1048,7 @@ USA
                 <token>tact</token>
             </pattern>
             <message>Did you mean <suggestion>intact</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example>Trendy T-shirts lacking in tact</example>
             <example correction="Intact">Outdoor Activities in Louisiana Remain <marker>In Tact</marker></example>
         </rule>
@@ -1043,7 +1058,7 @@ USA
                 <token>vein</token>
             </pattern>
             <message>Did you mean <suggestion>in vain</suggestion> (=unsuccessfully)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="in vain">I have been looking <marker>in vein</marker> 30 plus years with no luck.</example>
             <example>I have been looking in vain for 30 years.</example>
         </rule>
@@ -1053,7 +1068,7 @@ USA
                 <token>self</token>
             </pattern>
             <message>Did you mean <suggestion>itself</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="itself">I believe that such advertisements indicate a clear statement about the issue <marker>it self</marker> and they clarify the main cause of the problem.</example>
             <example>Was it self-defence?</example>
             <example>I believe that such advertisements indicate a clear statement about the issue itself and they clarify the main cause of the problem.</example>
@@ -1066,7 +1081,7 @@ USA
                     <token>then</token>
                 </pattern>
                 <message>Did you mean <suggestion>now and then</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="now and then">My mom used to make a hell of a burrito every <marker>know and then</marker>.</example>
                 <example>My mom used to make a hell of a burrito every now and then.</example>
             </rule>
@@ -1076,7 +1091,7 @@ USA
                     <token>know</token>
                 </pattern>
                 <message>Did you mean <suggestion>right now</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="right now">Girls wanting to meet you <marker>right know</marker>!</example>
                 <example>Girls wanting to meet you right now!</example>
             </rule>
@@ -1087,7 +1102,7 @@ USA
                     <token>on</token>
                 </pattern>
                 <message>Did you mean <suggestion>from now on</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="From now on"><marker>From know on</marker>, he is the “Big Kahuna”.</example>
                 <example>From now on, he is the “Big Kahuna”.</example>
             </rule>
@@ -1100,7 +1115,7 @@ USA
                     <token postag="PRP"/>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="now">And <marker>know</marker> he is leaving.</example>
                 <example>I don't even know myself.</example>
                 <example>And now he is leaving.</example>
@@ -1114,7 +1129,7 @@ USA
                     <token postag="VB"><exception regexp="yes">well|better</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example>I can now say something more.</example>
                 <example correction="now">I can <marker>know</marker> say something more.</example>
             </rule>
@@ -1128,6 +1143,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>know</suggestion>?</message>
+                (Incorrect word)
                 <example correction="know">Thanks for letting us <marker>now</marker>.</example>
                 <example>Thanks for letting us know.</example>
             </rule>
@@ -1141,7 +1157,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>got</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="got">I've <marker>go</marker> to go.</example>
             <example>I've got to go.</example>
         </rule>
@@ -1152,7 +1168,7 @@ USA
                 <token>time</token>
             </pattern>
             <message>Did you mean <suggestion>for a long time</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="for a long time">I have been interested in Wicca <marker>for along time</marker>.</example>
             <example>I have been interested in Wicca for a long time.</example>
         </rule>
@@ -1165,7 +1181,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>a while</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (compound word error)
                 <example correction="a while">I haven't posted in <marker>awhile</marker>.</example>
                 <example>I haven't posted in a while.</example>
             </rule>
@@ -1178,7 +1194,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>a while</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (compound word error)
                 <example correction="a while">I haven't posted in quite <marker>awhile</marker>.</example>
                 <example>I haven't posted in quite a while.</example>
             </rule>
@@ -1191,7 +1207,7 @@ USA
                 <token>purposes</token>
             </pattern>
             <message>Did you mean <suggestion>\1 all intents and purposes</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect phrase)
             <example correction="for all intents and purposes">Well, not all of it, but <marker>for all intensive purposes</marker>, I read it.</example>
             <example>Well, not all of it, but for all intents and purposes, I read it.</example>
         </rule>
@@ -1217,6 +1233,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>for</suggestion>?</message>
+                (Incorrect word)
                 <example><marker>For</marker> me.</example>
                 <example>And <marker>for</marker> me.</example>
                 <example correction="for">That's good <marker>fro</marker> your.</example>
@@ -1230,6 +1247,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>for</suggestion>?</message>
+                (Incorrect word)
                 <example correction="For"><marker>Fro</marker> me.</example>
             </rule>
             <rule>
@@ -1255,7 +1273,7 @@ USA
               <token postag="NNS"/>
             </pattern>
             <message>Possible typo. Did you mean: <suggestion>\1 \4</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adjective error)
             <example>We are all human beings.</example>
             <example correction="human beings">We are all <marker>human's beings</marker>.</example>
           </rule>
@@ -1265,7 +1283,7 @@ USA
               <token>beings</token>
             </pattern>
             <message>Possible typo. Did you mean: <suggestion>human \4</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adjective error)
             <example>We are all human beings.</example>
             <example correction="human beings">We are all <marker>humans beings</marker>.</example>
           </rule>
@@ -1278,7 +1296,7 @@ USA
               <token>last</token>
             </pattern>
             <message>Possible typo. Did you mean: <suggestion>\1 \2 \3 least</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example>Last but not least, I accentuate difficulties that such theories face.</example>
             <example correction="Last but not least"><marker>Last but not last</marker>, I accentuate difficulties that such theories face.</example>
         </rule>
@@ -1292,7 +1310,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>hour</suggestion> (=60 minutes)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="hour">It happened half an <marker>our</marker> ago.</example>
             </rule>
         </rulegroup>
@@ -1304,7 +1322,7 @@ USA
                 <token>same</token>
             </pattern>
             <message>Did you mean <suggestion>one and the same</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect phrase)
             <example correction="one and the same">Our town is a place where neighbours and friends are <marker>one in the same</marker>.</example>
             <example>Our town is a place where neighbours and friends are one and the same.</example>
         </rule>
@@ -1317,7 +1335,7 @@ USA
           <token><exception postag="NN.*" postag_regexp="yes"/></token>
         </pattern>
         <message>Did you mean <suggestion>otherwise</suggestion>?</message>
-        <short>Possible typo</short>
+        <short>Possible typo</short> (compound word error)
         <example correction="Otherwise"><marker>Other wise</marker> it's not true.</example>
         <example>Otherwise it's not true.</example>
         <example> The fact that Jesus' status as a wise man among other wise men is not unique tells against this being a Christian interpolation.</example>
@@ -1328,7 +1346,7 @@ USA
                 <token>say</token>
             </pattern>
             <message>Did you mean <suggestion>per se</suggestion> (=by itself, by themselves)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="per se">Not a car lover <marker>per say</marker>…</example>
             <example>Not a car lover per se…</example>
         </rule>
@@ -1338,7 +1356,7 @@ USA
                 <token>peak</token>
             </pattern>
             <message>Did you mean <suggestion>\1 peek</suggestion> (=preview)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="sneak peek">Yahoo has released a <marker>sneak peak</marker> into Yahoo! BrowserPlus.</example>
             <example>Yahoo has released a sneak peek into Yahoo! BrowserPlus.</example>
         </rule>
@@ -1347,6 +1365,7 @@ USA
             <token>sobber</token>
           </pattern>
         <message>Did you mean <suggestion>sober</suggestion> (=not intoxicated)? "Sobber" means "weeper, someone one who cries".</message>
+        (Incorrect word)
         <example correction="sober">I'm <marker>sobber</marker>.</example>
         <example>I'm sober.</example>
         </rule>
@@ -1356,7 +1375,7 @@ USA
                 <token>what</token>
             </pattern>
             <message>Did you mean <suggestion>\1\2</suggestion> (=slightly)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="Somewhat"><marker>Some what</marker> disappointed</example>
             <example>Somewhat disappointed</example>
         </rule>
@@ -1369,7 +1388,7 @@ USA
                 <token postag="NN:.*|NNS|NN" postag_regexp="yes"/>
             </pattern>
             <message>This world is usually written together in this context: <suggestion>\1\2</suggestion>.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="standalone">This is a <marker>stand alone</marker> computer.</example>
             <example>I stand alone at the parking.</example>
         </rule>
@@ -1379,7 +1398,7 @@ USA
                 <token>teem</token>
             </pattern>
             <message>Did you mean <suggestion>\1 team</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="football team">This is my favorite <marker>football teem</marker>.</example>
             <example>The gardens teem with squawking parrots.</example>
         </rule>
@@ -1389,7 +1408,7 @@ USA
                 <token>wear</token>
             </pattern>
             <message>Did you mean <suggestion>underwear</suggestion> (=underclothes)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="Underwear">Designer's <marker>Under Wear</marker></example>
             <example>Designer's Underwear</example>
         </rule>
@@ -1399,7 +1418,7 @@ USA
                 <token regexp="yes">as|by|upon</token>
             </pattern>
             <message>Did you mean <suggestion>\1\2</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short>(compound word error)
             <example correction="whereas">The northern and urban areas of the state do not generally offer sweet tea in the most restaurants, <marker>where as</marker> it is a staple beverage for the southern part ...</example>
             <example>The northern and urban areas of the state do not generally offer sweet tea in the most restaurants, whereas it is a staple beverage for the southern part ...</example>
         </rule>
@@ -1409,7 +1428,7 @@ USA
                 <token>haunt</token>
             </pattern>
             <message>Did you mean <suggestion>\1 hunt</suggestion> (=search for witches)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="witch hunt">An anti-Polish <marker>witch haunt</marker></example>
             <example>An anti-Polish witch hunt</example>
         </rule>
@@ -1419,7 +1438,7 @@ USA
             <token>out</token>
         </pattern>
           <message>Did you mean <suggestion>without</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (redundant word error)
           <example correction="Without"><marker>Without out</marker> a doubt, the internet's power is mighty and far-reaching.</example>
           <example>Without a doubt, the internet's power is mighty and far-reaching.</example>
         </rule>
@@ -1430,7 +1449,7 @@ USA
                 <token>s</token>
             </pattern>
             <message>Did you mean <suggestion>\1</suggestion> or <suggestion>\1\3</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short>(pronoun error)
             <example correction="your|yours">It's not mine, it's <marker>your's</marker>.</example>
             <example>It's not mine, it's yours.</example>
         </rule>
@@ -1443,7 +1462,7 @@ USA
                 </marker>
             </pattern>
             <message>An apostrophe is never used to form possessive case pronouns. Did you mean: <suggestion>\2</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (pronoun error)
             <example correction="yours">This house is <marker>yours'</marker>.</example>
             <example>My heart is hers.</example>
         </rule>
@@ -1457,7 +1476,7 @@ USA
             </pattern>
             <message>The apostrophe is probably in the wrong place here. Did you mean <suggestion>\1 \2\4' \5</suggestion>?</message>
             <url>http://www.quickanddirtytips.com/education/grammar/two-weeks-notice</url>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Punctuation error)
             <example>He'll be sailing around the world in two weeks' time.</example>
             <example correction="two weeks' time">"he'll be sailing around the world in <marker>two week's time</marker>.</example>
             <example>It was ready in a week's time.</example>
@@ -1472,7 +1491,7 @@ USA
                     <token postag="PRP|DT" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>hear</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="hear">I can <marker>here</marker> you!</example>
                 <example>I can hear you!</example>
             </rule>
@@ -1486,7 +1505,7 @@ USA
                     <token postag="PRP|DT" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>hear</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="hear">I can almost <marker>here</marker> you crying.</example>
                 <example>I can almost hear you crying.</example>
             </rule>
@@ -1502,7 +1521,7 @@ USA
                     <token regexp="yes">from|of</token>
                 </pattern>
                 <message>Did you mean <suggestion>hear</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="hear">If you don't <marker>here</marker> from me in a day...</example>
                 <example correction="hear">If you do not <marker>here</marker> from me in a day...</example>
             </rule>
@@ -1516,7 +1535,7 @@ USA
                 <token>is</token>
             </pattern>
             <message>Did you mean <suggestion>here</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>Here is an entertainment fit for giants.</example>
             <example correction="Here"><marker>Hear</marker> is an entertainment fit for giants.</example>
         </rule>
@@ -1536,7 +1555,7 @@ USA
                 <token>out</token>
             </pattern>
             <message>This word is usually written together. Did you mean <suggestion>without</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="without">We must take the bus before it leaves <marker>with out</marker> us.</example>
             <example>We must take the bus before it leaves without us.</example>
         </rule>
@@ -1590,7 +1609,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>a lot of</suggestion> (=plenty)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example>I've got a lot of questions to you.</example>
             <example correction="a lot of">I've got <marker>allot of</marker> questions to you.</example>
         </rule>
@@ -1602,7 +1621,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>heard</suggestion> (past tense of 'hear')?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short>(Incorrect word)
             <example correction="heard">I <marker>herd</marker> of a new song by Madonna.</example>
         </rule>
         <rulegroup id="LOOSE_LOSE" name="loose (lose)">
@@ -1615,7 +1634,7 @@ USA
                     <token regexp="yes">key|connection|password</token>
                 </pattern>
                 <message>Did you mean <suggestion>lose</suggestion> (= miss, waste, suffer the loss etc.)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="lose">I always <marker>loose</marker> the password.</example>
             </rule>
             <rule>
@@ -1626,7 +1645,7 @@ USA
                     <token postag="PRP$"/>
                 </pattern>
                 <message>Did you mean <suggestion>lose</suggestion> (= miss, waste, suffer the loss etc.)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="lose">Who do I contact if I <marker>loose</marker> my passport?</example>
                 <example>Who do I contact if I lose my passport?</example>
             </rule>
@@ -1639,7 +1658,7 @@ USA
                     <token negate_pos="yes" postag="PRP$"/>
                 </pattern>
                 <message>Did you mean <suggestion>lose</suggestion> (= miss, waste, suffer the loss etc.)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="lose">You don't want to <marker>loose</marker> this job, do you?</example>
                 <example>You don't want to lose this job, do you?</example>
             </rule>
@@ -1652,7 +1671,7 @@ USA
                     <token negate_pos="yes" postag="PRP$"/>
                 </pattern>
                 <message>Did you mean <suggestion>lose</suggestion> (= miss, waste, suffer the loss etc.)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="lose">You can <marker>loose</marker> so much and gain so little.</example>
             </rule>
         </rulegroup>
@@ -1664,7 +1683,7 @@ USA
                     <token>lose</token>
                 </pattern>
                 <message>Did you mean <suggestion>on the loose</suggestion> (=at large, free)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="on the loose">Spammer <marker>on the lose</marker>?</example>
                 <example>Spammer on the loose?</example>
             </rule>
@@ -1676,7 +1695,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>loose</suggestion> (=lax, unattached)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="loose">What do you do if your tooth gets knocked <marker>lose</marker>?</example>
             </rule>
         </rulegroup>
@@ -1688,7 +1707,7 @@ USA
                     <token>lose</token>
                 </pattern>
                 <message>Did you mean <suggestion>at a loss</suggestion> (=puzzled, without any idea)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="at a loss">Feeling <marker>at a lose</marker> and frustrated.</example>
                 <example>Feeling at a loss and frustrated.</example>
             </rule>
@@ -1704,7 +1723,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb error)
                 <example>Please give me advice, I don't know what to do.</example>
                 <example correction="advice">Please give me <marker>advise</marker>, I don't know what to do.</example>
                 <example correction="advice">Could someone give <marker>advise</marker> on a better way to do this.</example>
@@ -1718,7 +1737,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb error)
                 <example correction="advice">Any <marker>advise</marker> is welcome!</example>
                 <example>Any advice is welcome.</example>
             </rule>
@@ -1731,7 +1750,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb error)
                 <example correction="advice">What was the best piece of <marker>advise</marker> that you ever got?</example>
                 <example correction="advice">He didn't listen to my <marker>advise</marker>.</example>
                 <example>What was the best piece of advice that you ever got?</example>
@@ -1745,7 +1764,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advise</suggestion> (a verb)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb error)
                 <example correction="advise">I must <marker>advice</marker> you to go.</example>
                 <example>I cannot advise you anything.</example>
             </rule>
@@ -1759,7 +1778,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion><match no="2" regexp_match="ice" regexp_replace="ise"/></suggestion> (verb) instead of <match no="2"/> (noun)?</message>
             <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (noun/verb error)
             <example correction="advise">We <marker>advice</marker> you to do it.</example>
             <example correction="advises">He <marker>advices</marker> you to do it.</example>
             <example>We <marker>advise</marker> you to come by public transport</example>
@@ -1777,7 +1796,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>already</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example>I have already bought it.</example>
                 <example correction="already">I have <marker>all ready</marker> bought it.</example>
             </rule>
@@ -1791,7 +1810,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>already</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example>I've already bought it.</example>
                 <example correction="already">I've <marker>all ready</marker> bought it.</example>
             </rule>
@@ -1805,7 +1824,7 @@ USA
                 <token postag="PDT"/>
             </pattern>
             <message>Did you mean <suggestion>almost</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (contraction error)
             <example correction="Almost"><marker>All most</marker> all the patents were rejected...</example>
         </rule>
         <rule id="ANALYSIS_IF" name="analysis if (of)">
@@ -1817,7 +1836,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>of</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (conjunction error)
             <example correction="of">An Analysis <marker>if</marker> Rock Music</example>
             <example correction="of">That's the kind <marker>if</marker> blue I like.</example>
             <example>This is the kind of journalism that I like!</example>
@@ -1858,7 +1877,7 @@ USA
                     <token postag="VBP?" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>Shall</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example>Shall we dance?</example>
                 <example correction="Shall"><marker>Shell</marker> we dance?</example>
             </rule>
@@ -1872,7 +1891,7 @@ USA
                     <token postag="VB"/>
                 </pattern>
                 <message>Did you mean <suggestion>shall</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example>We shall overcome.</example>
                 <example correction="shall">We <marker>shell</marker> overcome.</example>
             </rule>
@@ -1896,7 +1915,7 @@ USA
                 <token regexp="yes">English|French|Spanish|Chinese|Russian</token>
             </pattern>
             <message>Did you mean <suggestion>pidgin</suggestion> (=simplified language)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="Pidgin"><marker>Pigeon</marker> English is spoken widely across Nigeria.</example>
         </rule>
         <rule id="TELEPHONE_POLL" name="telephone/... poll (pole)">
@@ -1907,7 +1926,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>pole</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="pole">As sort of life crises go, this is low on the totem <marker>poll</marker>.</example>
         </rule>
         <rule id="OPINION_POLE" name="opinion/... pole (poll)">
@@ -1918,7 +1937,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>poll</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (Incorrect word)
             <example correction="poll">Is it possible to add an opinion <marker>pole</marker> to my Myspace page?</example>
         </rule>
         <rulegroup id="YOUR" name="your (you're)">
@@ -1931,7 +1950,7 @@ USA
                     <token postag="VBG"/>
                 </pattern>
                 <message>Did you mean <suggestion>you're</suggestion> or <suggestion>you are</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (pronoun error)
                 <example>It wasn't your painting.</example>
                 <example>Let's see if <marker>you're</marker> using multiple search servers.</example>
                 <example>Let's see if <marker>you are</marker> using multiple search servers.</example>
@@ -1949,7 +1968,7 @@ USA
                     <token postag="VBG"/>
                 </pattern>
                 <message>Did you mean <suggestion>you're</suggestion> or <suggestion>you are</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (pronoun error)
                 <example correction="You're|You are"><marker>Your</marker> so annoying!</example>
                 <example>Your singing puts professional singers to shame.</example>
                 <example>Your loving friend</example>
@@ -1963,7 +1982,7 @@ USA
                     <token>a</token>
                 </pattern>
                 <message>Did you mean <suggestion>you're</suggestion> or <suggestion>you are</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (pronoun error)
                 <example>Let's see if <marker>you're</marker> a developer.</example>
                 <example correction="you're|you are">Let's see if <marker>your</marker> a developer.</example>
             </rule>
@@ -1974,7 +1993,7 @@ USA
                 <token>neck</token>
             </pattern>
             <message>Did you mean <suggestion>bottleneck</suggestion>? This word sequence is usually spelled together.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example correction="bottleneck">Finding the <marker>bottle neck</marker></example>
         </rule>
         <rule id="FIRE_ARM" name="fire arm (firearm)">
@@ -1983,7 +2002,7 @@ USA
                 <token>arm</token>
             </pattern>
             <message>Did you mean <suggestion>\1\2</suggestion>? This word sequence is usually spelled together.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example>The term gun is often used as a synonym for firearm</example>
             <example correction="firearm">The term gun is often used as a synonym for <marker>fire arm</marker></example>
         </rule>
