@@ -1723,7 +1723,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short> (noun/verb error)
+                <short>Possible typo</short> (noun/verb confusion error)
                 <example>Please give me advice, I don't know what to do.</example>
                 <example correction="advice">Please give me <marker>advise</marker>, I don't know what to do.</example>
                 <example correction="advice">Could someone give <marker>advise</marker> on a better way to do this.</example>
@@ -1737,7 +1737,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short> (noun/verb error)
+                <short>Possible typo</short> (noun/verb confusion error)
                 <example correction="advice">Any <marker>advise</marker> is welcome!</example>
                 <example>Any advice is welcome.</example>
             </rule>
@@ -1750,7 +1750,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advice</suggestion> (a noun)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short> (noun/verb error)
+                <short>Possible typo</short> (noun/verb confusion error)
                 <example correction="advice">What was the best piece of <marker>advise</marker> that you ever got?</example>
                 <example correction="advice">He didn't listen to my <marker>advise</marker>.</example>
                 <example>What was the best piece of advice that you ever got?</example>
@@ -1764,7 +1764,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>advise</suggestion> (a verb)?</message>
                 <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-                <short>Possible typo</short> (noun/verb error)
+                <short>Possible typo</short> (noun/verb confusion error)
                 <example correction="advise">I must <marker>advice</marker> you to go.</example>
                 <example>I cannot advise you anything.</example>
             </rule>
@@ -1778,7 +1778,7 @@ USA
             </pattern>
             <message>Did you mean <suggestion><match no="2" regexp_match="ice" regexp_replace="ise"/></suggestion> (verb) instead of <match no="2"/> (noun)?</message>
             <url>http://www.grammar-monster.com/easily_confused/advice_advise.htm</url>
-            <short>Possible typo</short> (noun/verb error)
+            <short>Possible typo</short> (noun/verb confusion error)
             <example correction="advise">We <marker>advice</marker> you to do it.</example>
             <example correction="advises">He <marker>advices</marker> you to do it.</example>
             <example>We <marker>advise</marker> you to come by public transport</example>
@@ -2012,7 +2012,7 @@ USA
                 <token>paper</token>
             </pattern>
             <message>Did you mean <suggestion>newspaper</suggestion>? This word sequence is usually spelled together.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             
             <example correction="newspaper">Subscribing the <marker>news paper</marker></example>
         </rule>
@@ -2022,7 +2022,7 @@ USA
                 <token>other</token>
             </pattern>
             <message>Did you mean <suggestion>another</suggestion>? This word sequence is usually spelled together.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example>Yet Another Resource List</example>
             <example correction="Another">Yet <marker>An other</marker> Resource List</example>
         </rule>
@@ -2032,7 +2032,7 @@ USA
                     <token regexp="yes">(mother|sister|brother|father|relative|son)s?-in-low</token>
                 </pattern>
                 <message>You probably meant: <suggestion><match no="1" regexp_match="(.*)-in-low" regexp_replace="$1-in-law"/></suggestion></message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (Incorrect word)
                 <example correction="mother-in-law">This is her <marker>mother-in-low</marker>.</example>
             </rule>
             <rule>
@@ -2042,7 +2042,7 @@ USA
                     <token>low</token>
                 </pattern>
                 <message>Possible typos. This word is usually spelled with hyphens: <suggestion>\1-\2-law</suggestion>.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (missing hyphen)
                 <example correction="mother-in-law">This is her <marker>mother in low</marker>.</example>
             </rule>
         </rulegroup>
@@ -2053,7 +2053,7 @@ USA
                 <token>passed</token>
             </pattern>
             <message>Did you mean <suggestion>in the past</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (noun/verb confusion error)
             <example correction="in the past">We succeeded <marker>in the passed</marker>.</example>
             <example>In the past, we had a number of successes.</example>
         </rule>
@@ -2065,7 +2065,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>Then</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> 
             <example>And <marker>then</marker> it became clear.</example>
             <example correction="Then"><marker>Them</marker> it became clear.</example>
             <example correction="Then"><marker>Than</marker> it became clear.</example>
@@ -2076,7 +2076,7 @@ USA
                 <token postag="VB"><exception postag="JJ|RB" postag_regexp="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>to \2</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (preposition error)
             <example correction="to go">I want <marker>too go</marker> abroad.</example>
             <example>I want to go abroad.</example>
             <example>He succeeded almost too well.</example>
@@ -2095,7 +2095,7 @@ USA
                     <!-- token postag=&quot;VBP&quot; negate_pos=&quot;yes&quot;/ -->
                 </pattern>
                 <message>Did you mean <suggestion>too</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb error)
                 <example>Items X and Y were <marker>two</marker> items that revolutionized the field.</example>
                 <example>The plan is <marker>to</marker> soon launch a new plane.</example>
                 <example>The weather was <marker>too</marker> cold to go swimming.</example>
@@ -2117,7 +2117,7 @@ USA
                     <token negate_pos="yes" postag="JJR"/>
                 </pattern>
                 <message>Did you mean <suggestion>too</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb error)
                 <example>The password provides access <marker>to</marker> much more data.</example>
                 <example>It's limited <marker>to</marker> much shorter terms.</example>
                 <example> This led <marker>to</marker> much speculation.</example>
@@ -2144,7 +2144,7 @@ USA
                     <token postag="SENT_END"/>
                 </pattern>
                 <message>Did you mean <suggestion>too</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb error)
                 <example correction="too">It's <marker>to</marker> early.</example>
                 <example>It's too early.</example>
                 <example>I've never been to Paris.</example>
@@ -2160,7 +2160,7 @@ USA
                     <token postag="VB"/>
                 </pattern>
                 <message>Did you mean <suggestion>too</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb error)
                 <example correction="too">It's <marker>to</marker> good to be true.</example>
                 <example>It's too good to be true.</example>
                 <example>It's too large for the box.</example>
@@ -2175,7 +2175,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>are</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (missing verb error)
             <example>Some would think you <marker>are</marker> a fortunate man.</example>
             <example correction="are">Some would think you <marker>a</marker> fortunate man.</example>
         </rule>
