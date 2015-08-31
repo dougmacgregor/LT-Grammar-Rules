@@ -2188,7 +2188,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>extent</suggestion> (&quot;extent&quot; is a noun, &quot;extend&quot; is a verb)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb confusion)
                 <example correction="extent">Yes it is, to a certain <marker>extend</marker>.</example>
             </rule>
             <rule>
@@ -2200,7 +2200,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>extent</suggestion> (&quot;extent&quot; is a noun, &quot;extend&quot; is a verb)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (noun/verb confusion)
                 <example correction="extent">To the <marker>extend</marker> permitted by law</example>
             </rule>
         </rulegroup>
@@ -2212,7 +2212,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>where</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="where">Now, this is <marker>were</marker> my ignorance sets in.</example>
         </rule>
         <rule id="ONE_ORE" name="one ore (or)">
@@ -2223,7 +2223,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>or</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="or">Type in one <marker>ore</marker> more words.</example>
         </rule>
         <rule id="THE_ONLY_ON" name="the only on (one)">
@@ -2235,7 +2235,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>one</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="one">The trash folder is the only <marker>on</marker> for me that works.</example>
         </rule>
         <rule id="THEIR_IS" name="their (there) is/are">
@@ -2246,7 +2246,7 @@ USA
                 <token regexp="yes">is|are|a</token>
             </pattern>
             <message>Did you mean <suggestion>there</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (pronoun/adverb confusion)
             <example correction="there">He noticed that <marker>their</marker> is a new test.</example>
         </rule>
         <rule id="I_A" name="I a/an (am)">
@@ -2258,7 +2258,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>am</suggestion> (first person of &quot;to be&quot;)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect article)
             <example>Am I An Atheist Or An Agnostic?</example>
             <example correction="am">I <marker>a</marker> not sure.</example>
         </rule>
@@ -2271,7 +2271,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>knew</suggestion> (past of &quot;to know&quot;)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (homonym confusion)
             <example correction="knew">Ah, I <marker>new</marker> you would say that.</example>
         </rule>
         <rule id="PLEASE_NOT_THAT" name="please not (note) that">
@@ -2283,7 +2283,7 @@ USA
                 <token>that</token>
             </pattern>
             <message>Did you mean <suggestion>note</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="note">Please <marker>not</marker> that saying “Open Source” does not mean very much.</example>
         </rule>
         <rulegroup id="I_AM_NOTE_SURE" name="I'm note (not) sure">
@@ -2297,6 +2297,7 @@ USA
                     <token>sure</token>
                 </pattern>
                 <message>Did you mean <suggestion>not</suggestion>?</message>
+                (incorrect word)
                 <example correction="not">I am <marker>note</marker> sure.</example>
             </rule>
             <rule>
@@ -2310,6 +2311,7 @@ USA
                     <token>sure</token>
                 </pattern>
                 <message>Did you mean <suggestion>not</suggestion>?</message>
+                (incorrect word)
                 <example correction="not">I'm <marker>note</marker> sure.</example>
             </rule>
         </rulegroup>
@@ -2321,7 +2323,7 @@ USA
                 <token postag="(RB|JJ|NN|NN:.*)" postag_regexp="yes"><exception inflected="yes" regexp="yes">case|tree|job|butter|mixture|flour|bread|oil|shell|cracker|allergy|cake</exception></token>
             </pattern>
             <message>Did you mean <suggestion>not</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example>I love nut oil!</example>
             <example correction="not">I'm <marker>nut</marker> sure.</example>
         </rule>
@@ -2332,7 +2334,7 @@ USA
                 <token>one</token>
             </pattern>
             <message>Did you mean <suggestion>and so on</suggestion> (=&quot;etc.&quot;)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="and so on">We think it helps to find bottlenecks <marker>and so one</marker>.</example>
         </rule>
         <rule id="THROUGH_AWAY" name="through (throw) away">
@@ -2343,7 +2345,7 @@ USA
                 <token>away</token>
             </pattern>
             <message>Did you mean <suggestion>throw</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="throw">Or we just <marker>through</marker> away all bugs.</example>
         </rule>
         <rule id="OR_WAY_IT" name="or way (was) it">
@@ -2355,7 +2357,7 @@ USA
                 <token regexp="yes">(it|that|this)</token>
             </pattern>
             <message>Did you mean <suggestion>was</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="was">Or <marker>way</marker> that a very recent change in Qt?</example>
         </rule>
         <rule id="DT_RESPONDS" name="the/a responds (response)">
@@ -2366,7 +2368,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>response</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (noun/verb confusion)
             <example correction="response">Thanks for the <marker>responds</marker>.</example>
         </rule>
         <rule id="THINK_OFF" name="think/know off (of)">
@@ -2377,7 +2379,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>of</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="of">It's the only part of KDE I know <marker>off</marker> that uses automasking.</example>
         </rule>
         <rulegroup id="NOT_US1" name="not us (use)">
@@ -2389,7 +2391,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>use</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example correction="use">Please do not <marker>us</marker> dispose.</example>
             </rule>
             <rule>
@@ -2401,7 +2403,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>use</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example correction="use">Please don't <marker>us</marker> dispose.</example>
             </rule>
         </rulegroup>
@@ -2413,7 +2415,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>think</suggestion> or <suggestion>thinks</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example>I <marker>think</marker> that's a good idea.</example>
             <example correction="think|thinks">I <marker>thing</marker> that's a good idea.</example>
         </rule>
@@ -2430,7 +2432,7 @@ USA
                     <token><exception regexp="yes">not|to</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>where</suggestion> or <suggestion>we</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example><marker>We</marker> are in the process of implementing this.</example>
                 <example>These relations were long marked by conflict.</example>
                 <example correction="where|we">They went <marker>were</marker> he wanted.</example>
@@ -2449,7 +2451,7 @@ USA
                     <token postag="VB|VBP" postag_regexp="yes"><exception postag="JJ|VBN" postag_regexp="yes"/><exception regexp="yes">there|they|we|you</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>where</suggestion> or <suggestion>we</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example><marker>We</marker> are in the process of implementing this.</example>
                 <example correction="Where|We"><marker>Were</marker> are in the process of implementing this.</example>
                 <example>These relations were long marked by conflict.</example>
@@ -2465,7 +2467,7 @@ USA
                 <token regexp="yes">was|wasn</token>
             </pattern>
             <message>Did you mean <suggestion>it</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (pronoun/verb confusion)
             <example>...which <marker>it</marker> was the last day.</example>
             <example correction="it">...which <marker>is</marker> wasn't the last day.</example>
             <example correction="it">...which <marker>is</marker> was not the last day.</example>
@@ -2478,7 +2480,7 @@ USA
                 <token postag="PRP$"/>
             </pattern>
             <message>Did you mean <suggestion>for</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="for">Thanks again <marker>fore</marker> your help.</example>
         </rule>
         <rule id="LESS_MORE_THEN" name="less/more ... then (than)">
@@ -2505,7 +2507,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>then</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adverb/conjunction confusion)
             <example correction="then">If we want to eat, <marker>than</marker> we need to get some money.</example>
             <example>It's not much more, in fact, than the return that is offered on U. S. Treasury bonds.</example>
         </rule>
@@ -2516,7 +2518,7 @@ USA
                 <token>on</token>
             </pattern>
             <message>Did you mean <suggestion>from then on</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adverb/conjunction confusion)
             <example correction="From then on"><marker>From than on</marker> I entered a period of dullness, nothing bothered me anymore.</example>
             <example>From then on I entered a period of dullness, nothing bothered me anymore.</example>
         </rule>
@@ -2528,7 +2530,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>then</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adverb/conjunction confusion)
             <example correction="then">How to add equal values and <marker>than</marker> replace them with their sum?</example>
             <example correction="then">Since <marker>than</marker> we've released two new versions.</example>
         </rule>
@@ -2541,7 +2543,7 @@ USA
                 <token>,</token>
             </pattern>
             <message>Did you mean <suggestion>then</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adverb/conjunction confusion)
             <example correction="then">The genuinely interesting question, <marker>than</marker>, becomes...</example>
             <example>The genuinely interesting question, then, becomes...</example>
         </rule>
@@ -2553,7 +2555,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>then</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (adverb/conjuction confusion)
             <example correction="then">Please, who <marker>than</marker> can help!</example>
             <example>Please, who then can help?</example>
         </rule>
@@ -2567,7 +2569,7 @@ USA
                     <token><exception postag="SENT_END"/><exception>,</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>than</suggestion>? 'than' is used for comparisons, 'then' is an expression of time.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb/conjunction confusion)
                 <example>If you bore each other <marker>then</marker>, heaven help you.</example>
                 <example correction="than">Single Clicking rather <marker>then</marker> Double Clicking</example>
             </rule>
@@ -2579,7 +2581,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean 'different <suggestion>from</suggestion>'? 'Different than' is often considered colloquial style.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (preposition error)
                 <example>Are human beings any different from animals?</example>
                 <example correction="from">Are human beings any different <marker>than</marker> animals?</example>
                 <example correction="from">Are human beings any different <marker>then</marker> animals?</example>
@@ -2595,7 +2597,7 @@ USA
                     <token regexp="yes">cake|work|information</token>
                 </pattern>
                 <message>Did you mean <suggestion>piece</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (homonym error)
                 <example correction="piece">It's a <marker>peace</marker> of cake!</example>
                 <example>It's a piece of cake!</example>
             </rule>
@@ -2609,7 +2611,7 @@ USA
                     <token postag="SENT_END" regexp="yes">\p{Punct}</token>
                 </pattern>
                 <message>Did you mean <suggestion>quiet</suggestion>? 'quiet' means 'silent', 'quite' mean 'very' or 'to a moderate extent'</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (adverb/adjective confusion)
                 <example correction="quiet">Be <marker>quite</marker>!</example>
                 <example>Be quiet!</example>
                 <example>Not quite.</example>
@@ -2624,7 +2626,7 @@ USA
                 <token negate="yes" regexp="yes">(and|to)</token>
             </pattern>
             <message>Did you mean <suggestion>of course</suggestion> (=naturally)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example>The law of cause and effect.</example>
             <example correction="Of course"><marker>Of cause</marker> all these things are relative.</example>
         </rule>
@@ -2636,7 +2638,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>at</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="at">Although I must admit when I look <marker>ate</marker> the paperback...</example>
         </rule>
         <rule id="A_KNOW_BUG" name="a know (known) bug/problem" type="grammar">
@@ -2648,7 +2650,7 @@ USA
                 <token regexp="yes">bug|problem</token>
             </pattern>
             <message>Did you mean <suggestion>known</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (tense error)
             <example correction="known">This is a <marker>know</marker> problem.</example>
         </rule>
         <rule id="MY_BE" name="my (may) be">
@@ -2657,7 +2659,7 @@ USA
                 <token>be</token>
             </pattern>
             <message>Did you mean <suggestion>may be</suggestion> or <suggestion>might be</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example>Something that <marker>might be</marker> interesting...</example>
             <example>Something that <marker>may be</marker> interesting...</example>
             <example correction="may be|might be">Something that <marker>my be</marker> interesting...</example>
@@ -2670,7 +2672,7 @@ USA
                 <token regexp="yes">(should|could)</token>
             </pattern>
             <message>Did you mean <suggestion>it</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (pronoun/verb error)
             <example correction="it">I definitely think <marker>is</marker> should be less than four years.</example>
         </rule>
         <rule id="THE_FLEW" name="the flew (flu)">
@@ -2681,7 +2683,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>flu</suggestion> (flew is past tense of fly, flu is a viral disease)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (noun/verb error)
             <example correction="flu">I have been out with the <marker>flew</marker> for the past 3 days.</example>
         </rule>
         <rule default="off" id="CAN_NOT" name="can not (cannot)">
@@ -2690,7 +2692,7 @@ USA
                 <token>not</token>
             </pattern>
             <message>Did you mean <suggestion>cannot</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (compound word error)
             <example>You <marker>cannot</marker> use the keyboard to select an item.</example>
             <example correction="cannot">You <marker>can not</marker> use the keyboard to select an item.</example>
         </rule>
@@ -2702,7 +2704,7 @@ USA
                 <token><exception>to</exception></token>
             </pattern>
             <message>Did you mean <suggestion>can't</suggestion> or <suggestion>cannot</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (contraction error)
             <example>I <marker>can't</marker> view pdf files in Explorer.</example>
             <example correction="can't|cannot">I <marker>cant</marker> view pdf files in Explorer.</example>
             <example>... despite all the modern cant to the contrary.</example>
@@ -2716,7 +2718,7 @@ USA
             <token postag="VB"><exception regexp="yes">fire|yes|hole|even|out</exception></token>
           </pattern>
           <message>Did you mean <suggestion>he'll</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (contraction error)
           <example>Go to hell!</example>
           <example>Everybody in hell know me.</example>
           <example>Hell yes!</example>
@@ -2735,7 +2737,7 @@ USA
             <token postag="VB"><exception>fire</exception></token>
           </pattern>
           <message>Did you mean <suggestion>he'll</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (contraction error)
           <example>Heaven and hell exist.</example>
           <example correction="he'll">And <marker>hell</marker> be there.</example>
         </rule>
@@ -2745,7 +2747,7 @@ USA
             <token postag="VB"><exception regexp="yes">people|fish</exception></token>
           </pattern>
           <message>Did you mean <suggestion>she'll</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (contraction error)
           <example>This is an egg shell.</example>
           <example>How does the shell know which directory it's in?</example>
           <example>Shell people did not, strictly speaking, breathe.</example>
@@ -2762,7 +2764,7 @@ USA
                     <token postag="VBP?|RB?" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>Let's</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example correction="Let's"><marker>Lets</marker> go home.</example>
                 <example>It lets you sleep all night.</example>
                 <example correction="Let's">It's up to you three so <marker>lets</marker> hear your ideas</example>
@@ -2777,7 +2779,7 @@ USA
                     <token postag="VBP?|RB?" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>Let's</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example correction="Let's"><marker>Lets</marker> all go home.</example>
                 <example>It lets you sleep all night.</example>
             </rule>
@@ -2791,7 +2793,7 @@ USA
                     <token><exception postag="VB|RB?" postag_regexp="yes"/><exception regexp="yes">all|first|just</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>\1s</suggestion> or <suggestion>\1</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example correction="lets|let">It <marker>let's</marker> you quickly search for the product.</example>
                 <example>Let's go home!</example>
                 <example>Let's all go home!</example>
@@ -2810,7 +2812,7 @@ USA
                     <token><exception postag="VB|RB?" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>\1s</suggestion> or <suggestion>\1</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example correction="lets|let">The system <marker>let's</marker> all students enter the building.</example>
                 <example>Let's go home!</example>
                 <example>Let's all go home!</example>
@@ -2830,7 +2832,7 @@ USA
               </pattern>
               <message>Did you mean <suggestion>its</suggestion> (possessive pronoun)?</message>
               <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-              <short>Possible typo</short>
+              <short>Possible typo</short> (possessive pronoun error)
               <example>Above all it's important to note they're disgusting.</example>
               <example correction="its">For all <marker>it's</marker> wonderful moments of humor...</example>
               <example>After all it's my birthday weekend.</example>
@@ -2847,7 +2849,7 @@ USA
               </pattern>
               <message>Did you mean <suggestion>its</suggestion> (possessive pronoun)?</message>
               <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-              <short>Possible typo</short>
+              <short>Possible typo</short> (possessive pronoun error)
               <example>Above all it's important to note they're disgusting.</example>
               <example correction="its">Amid <marker>it's</marker> wonderful moments of humor...</example>
             </rule>
@@ -2863,7 +2865,7 @@ USA
               </pattern>
               <message>Did you mean <suggestion>its</suggestion> (possessive pronoun)?</message>
               <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-              <short>Possible typo</short>
+              <short>Possible typo</short> (possessive pronoun error)
               <example>Above all it's important to note they're disgusting.</example>
               <example correction="its">For all <marker>it's</marker> perfection, I could not really like it.</example>
               <example>I mean after all it's just a bandaid.</example>
@@ -2884,7 +2886,7 @@ USA
               </pattern>
               <message>Did you mean <suggestion>its</suggestion> (possessive pronoun)?</message>
               <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-              <short>Possible typo</short>
+              <short>Possible typo</short> (possessive pronoun error)
               <example>Above all it's important to note they're disgusting.</example>
               <example correction="its">Alongside <marker>it's</marker> coast, there were boats.</example>
             </rule>
@@ -2899,7 +2901,7 @@ USA
                     <token>way</token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">Help is on <marker>it's</marker> way.</example>
             </rule>
             <rule>
@@ -2913,7 +2915,7 @@ USA
                     <token><exception postag="VBN|JJ" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it is</suggestion>) instead of 'its' (possessive pronoun)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example><marker>It's</marker> where people walk around.</example>
                 <example correction="It's|It is"><marker>Its</marker> where people walk around.</example>
                 <example>It has not yet found its way either into the pharmacopoeia.</example>
@@ -2930,7 +2932,7 @@ USA
              <token postag="VBG"><exception postag="[JN].*" postag_regexp="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it is</suggestion>) instead of 'its' (possessive pronoun)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (contraction error)
             <example correction="It's|It is"><marker>Its</marker> frustrating.</example>
             <example>It's frustrating.</example>
             <example correction="it's|it is">Well, <marker>its</marker> gonna take some time.</example>
@@ -2946,7 +2948,7 @@ USA
              <token regexp="yes">ok(ay)?</token>
             </pattern>
             <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it is</suggestion>) instead of 'its' (possessive pronoun)?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (contraction error)
             <example correction="It's|It is"><marker>Its</marker> OK.</example>
             <example>It's OK.</example>
             <example correction="it's|it is">Well, <marker>its</marker> okay.</example>
@@ -2962,7 +2964,7 @@ USA
                     <token>own</token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="Its">New Robot Reproduces on <marker>It's</marker> Own.</example>
                 <example correction="its">The cat was on <marker>it's</marker> own in the large house.</example>
                 <example>The cat was on its own in the large house.</example>
@@ -2980,7 +2982,7 @@ USA
                     <token postag="NN(S|(:UN?))?" postag_regexp="yes"><exception postag_regexp="yes" postag="JJ|VBN|CC|DT|IN|MD|POS|PP|RB|WDT|WP|WRB"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">I can’t remember <marker>it’s</marker> name.</example>
                 <example>It's nice.</example>
                 <example>I think it's still valid.</example>
@@ -3002,7 +3004,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">RDF can also be used to express metaproperties of a thesaurus, such as <marker>it's</marker> title.</example>
                 <example correction="its">There are so many things like about Coney Island, such as <marker>it's</marker> old-school charm.</example>
                 <example>We liked a lot about the biology course, such as its pace of learning.</example>
@@ -3018,7 +3020,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">I would still consider assembling it from all <marker>it's</marker> basic components.</example>
                 <example correction="its">From all <marker>it's</marker> windows streamed glorious banners.</example>
                 <example>From all its windows streamed glorious banners.</example>
@@ -3035,7 +3037,7 @@ USA
                     <token regexp="yes">approach|idea|own</token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">We could borrow <marker>it's</marker> approach.</example>
                 <example correction="Its"><marker>It's</marker> approach was signaled by crunching leaves.</example>
                 <example>I was informed of its approach by the crunching leaves.</example>
@@ -3051,7 +3053,7 @@ USA
                     <token>best</token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (processive pronoun error)
                 <example correction="its">Linux at <marker>it's</marker> best</example>
             </rule>
             <rule>
@@ -3066,7 +3068,7 @@ USA
                     <token postag="NNS"/>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">When some of <marker>it's</marker> clauses match.</example>
             </rule>
             <rule>
@@ -3079,7 +3081,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example correction="its">Don't judge a book by <marker>it's</marker> cover.</example>
             </rule>
             <rule>
@@ -3090,7 +3092,7 @@ USA
                     <token regexp="yes">(a|the|yours?|her|his|ours?|theirs?|mine|my)</token>
                 </pattern>
                 <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it is</suggestion>) instead of 'its' (possessive pronoun)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example><marker>It's</marker> a good opportunity.</example>
                 <example correction="It's|It is"><marker>Its</marker> his uncle.</example>
                 <example correction="It's|It is"><marker>Its</marker> a good opportunity.</example>
@@ -3107,7 +3109,7 @@ USA
                     <token postag="JJ.*|NN.*" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (=it is)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive pronoun error)
                 <example>Scene from It's a Boy Girl Thing</example>
                 <example correction="its">This lovely and interesting area with <marker>it's</marker> friendly people will make a welcoming break</example>
                 <example correction="its">In <marker>it's</marker> heyday it was a bustling port.</example>
@@ -3124,7 +3126,7 @@ USA
                     <token>going</token>
                 </pattern>
                 <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it is</suggestion>) instead of 'its' (possessive pronoun)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example>It's going to rain.</example>
                 <example>It may even lead to its going out of business.</example>
                 <example correction="It's|It is"><marker>Its</marker> going to be sunny tomorrow.</example>
@@ -3137,7 +3139,7 @@ USA
                     <token>had</token>
                 </pattern>
                 <message>Did you mean <suggestion>it's</suggestion> (=<suggestion>it has</suggestion>) instead of 'its' (possessive pronoun)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (contraction error)
                 <example>It's had a huge impact on me.</example>
                 <example correction="it's|it has">And <marker>its</marker> had a mention at the Labour Party Conference this morning..</example>
             </rule>
@@ -3152,6 +3154,7 @@ USA
                     <token><exception postag_regexp="yes" postag="VBN|CC|DT|IN|MD|POS|PP|RB|WDT|WP|WRB"/><exception regexp="yes">not|going|gonna|ok(ay)?|just</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (short form of 'it is')?</message>
+                (possessive pronoun error)
                 <example correction="its">It does this by providing <marker>it's</marker> own open source based products.</example>
                 <example>Well, you know, kinda strange though, considering it's not Christmas.</example>
                 <example>I've been hearing it's supposed to snow tonight.</example>
@@ -3168,6 +3171,7 @@ USA
                     <token postag_regexp="yes" postag="NN.*|JJ.?"><exception regexp="yes">ok(ay)?</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>its</suggestion> (possessive pronoun) instead of 'it's' (short form of 'it is')?</message>
+                (possessive pronoun error)
                 <example correction="its">This is an opportunity to see how SAP addresses <marker>it's</marker> internal developers.</example>
                 <example>For the first fifteen or twenty minutes it's possible to be more or less interested.</example>
                 <example>Who says it's going to be published?</example>
@@ -3191,6 +3195,7 @@ USA
                 <token postag="NN|NN:UN?" postag_regexp="yes"><exception postag="NN|NN:UN?" postag_regexp="yes" negate_pos="yes"/></token>
               </pattern>
             <message>Did you mean <suggestion>its <match no="4"/> <match no="5"/></suggestion>?</message>
+            (possessive pronoun error)
             <example correction="its reddest area">For the painting, <marker>it's reddest area</marker> was in the upper left.</example>
             <example>For the painting, its reddest area was in the upper left.</example>
             </rule>
@@ -3204,6 +3209,7 @@ USA
                 <token postag="JJ|NN|NN:UN?|NNS" postag_regexp="yes"><exception postag="JJ|NN|NN:UN?|NNS" postag_regexp="yes" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>for its \5</suggestion>?</message>
+           (possessive pronoun error)
             <example correction="for its crazy">No one had any remedies <marker>for it's crazy</marker> rantings.</example>
             <example>No one had any remedies for its crazy rantings.</example>
         </rule>
@@ -3216,6 +3222,7 @@ USA
                 <token>s</token>
                 <token postag="JJ|NN|NN:UN?|NNS" postag_regexp="yes"><exception postag="JJ|NN|NN:UN?|NNS" postag_regexp="yes" negate_pos="yes"/></token>
             </pattern>
+            (possessive pronoun error)
             <message>Did you mean <suggestion><match no="1"/> its <match no="5"/></suggestion>?</message>
             <example correction="about its happy">The frog told a story <marker>about it's happy</marker> childhood in the river.</example>
             <example>The frog told a story about its happy childhood in the river.</example>
@@ -3231,6 +3238,7 @@ USA
                 <token postag="NN|NN:UN?|NNS" postag_regexp="yes"><exception postag="NN|NN:UN?|NNS" postag_regexp="yes" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> <match no="2"/> its <match no="6"/></suggestion>?</message>
+            (possessive pronoun error)
             <example correction="to take its apple">I wanted so badly <marker>to take it's apple</marker> and throw it through the window.</example>
             <example>I wanted so badly to take its apple and throw it through the window.</example>
         </rule>
@@ -3243,6 +3251,7 @@ USA
                 <token postag="JJ"><exception postag="JJ" negate_pos="yes"/></token>
                 <token postag="NNS|NN|NN:UN?" postag_regexp="yes"><exception postag="NNS|NN|NN:UN?" postag_regexp="yes" negate_pos="yes"/></token>
             </pattern>
+            (possessive pronoun error)
             <message>Did you mean <suggestion>its <match no="4"/> <match no="5"/></suggestion>?</message>
             <example correction="its odorless handshake">I appreciated <marker>it's odorless handshake</marker> by the fifth time.</example>
             <example>I appreciate its odorless handshake by the fifth time.</example>
@@ -3257,7 +3266,7 @@ USA
            <token postag_regexp="yes" postag="VB[PN]"/>
           </pattern>
           <message>Did you mean <suggestion>we'd</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (contraction error)
           <example correction="We'd"><marker>Wed</marker> gone so far.</example>
           <example correction="we'd">Actually, <marker>wed</marker> love to do this!</example>
           <example>We'd love to eat ice cream!</example>
@@ -3270,7 +3279,7 @@ USA
            <token regexp="yes">better|never|rather|probably|normally|ordinarily</token>
           </pattern>
           <message>Did you mean <suggestion>we'd</suggestion>?</message>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (contraction error)
           <example correction="we'd">Really, <marker>wed</marker> better hurry!</example>
           <example>We'd love to eat ice cream!</example>
           </rule>
@@ -3287,7 +3296,7 @@ USA
         </pattern>
         <message>Did you mean <suggestion>whose</suggestion>?</message>
         <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-        <short>Possible typo</short>
+        <short>Possible typo</short> (possessive pronoun error)
         <example correction="whose">By <marker>who's</marker> standards?</example>
         <example>Those whose money was stolen are free.</example>
         <example correction="whose">What do you know about <marker>who's</marker> car that is?</example>
@@ -3304,7 +3313,7 @@ USA
         </pattern>
         <message>Did you mean <suggestion>whose</suggestion>?</message>
         <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-        <short>Possible typo</short>
+        <short>Possible typo</short> (possessive pronoun error)
         <example correction="whose">Those <marker>who's</marker> highest level of education...</example>
         <example>Those whose money was stolen are free.</example>
         </rule>
@@ -3320,7 +3329,7 @@ USA
           </pattern>
           <message>Did you mean <suggestion>whose</suggestion>?</message>
           <url>http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc</url>
-          <short>Possible typo</short>
+          <short>Possible typo</short> (possessive pronoun error)
           <example correction="whose">These are people <marker>who's</marker> lives are important.</example>
           <example>These are people whose lives are important.</example>
         </rule>
@@ -3333,6 +3342,7 @@ USA
                 <token postag="NN|NN:UN?" postag_regexp="yes"><exception postag="NN|NN:UN?" postag_regexp="yes" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>whose <match no="4"/></suggestion>?</message>
+            (possessive pronoun error)
             <example correction="whose banana">Do we know <marker>who's banana</marker> this is on the table?</example>
             <example>Do we know whose banana this is on the table?</example>
         </rule>
@@ -3345,6 +3355,7 @@ USA
                 <token postag="DT"><exception postag="DT" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>who's</suggestion>?</message>
+            (contraction error)
             <example correction="Who's"><marker>Whose</marker> the boss around here?</example>
             <example>Who's the boss around here?</example>
         </rule>
@@ -3359,6 +3370,7 @@ USA
                 <token regexp="yes">actual|name|previous</token>
             </pattern>
             <message>Did you mean <suggestion>whose</suggestion>?</message>
+            (possessive pronoun error)
             <example correction="Whose"><marker>Who's</marker> actual job is it to make copies around here?</example>
             <example>Whose actual job is it to get coffee around here?</example>
         </rule>
@@ -3374,7 +3386,7 @@ USA
                     <token><exception postag="NN.*|JJ.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example correction="now">There <marker>no</marker> will be a park.</example>
                 <example>Although in no state the repression has been as great as it was in Soviet times.</example>
                 <example>There was evidently no thought of their being published.</example>
@@ -3388,7 +3400,7 @@ USA
                     <token postag="CC|DT|IN|MD|NP|RP|WDT|WP|WRB" postag_regexp="yes"><exception regexp="yes">such|for</exception><exception postag="JJR|NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example>Get out of bed no later than ten minutes after the alarm goes off.</example>
                 <example correction="now">There's <marker>no</marker> a new building.</example>
                 <example>I had to say no to them.</example>
@@ -3401,7 +3413,7 @@ USA
                     <token regexp="yes">were|was|been|be|is</token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (incorrect word)
                 <example correction="Now"><marker>No</marker> is the right time.</example>
             </rule>
         </rulegroup>
@@ -3414,7 +3426,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>off</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="off">The light was switched <marker>of</marker></example>
             <example>The light was turned <marker>off</marker></example>
         </rule>
@@ -3427,7 +3439,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>scent</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (homonym confusion error)
                 <example correction="scent">His <marker>sent</marker> was strong.</example>
             </rule>
             <rule>
@@ -3438,7 +3450,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>sent</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (homonym confusion error)
                 <example correction="sent">He <marker>scent</marker> the package.</example>
             </rule>
         </rulegroup>
@@ -3452,7 +3464,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>scene</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (homonym confusion error)
                 <example correction="scene">We watched the opening <marker>seen</marker> of the play.</example>
             </rule>
             <rule>
@@ -3463,7 +3475,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>seen</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (homonym confusion error)
                 <example correction="seen">Similar to those <marker>scene</marker> in the park...</example>
                 <example>Similar to those <marker>seen</marker> in the park.</example>
             </rule>
@@ -3474,7 +3486,7 @@ USA
                 <token>manger</token>
             </pattern>
             <message>Did you mean <suggestion>\1 manager</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="project manager">He's our new <marker>project manger</marker>.</example>
             <example>Jesus lies in the manger.</example>
             <example>He's our new project manager.</example>
@@ -3489,7 +3501,7 @@ USA
                     <token postag="VBN|JJ" postag_regexp="yes"><exception>course</exception></token>
                 </pattern>
                 <message>It's never correct to use &quot;of&quot; after a modal verb. Use <suggestion>\1 have</suggestion>, or, in informal register, <suggestion>\1've</suggestion>.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (verb phrase error)
                 <example correction="should have|should've">It <marker>should of</marker> been found last night.</example>
                 <example>It was the will of world citizens to fix the problem.</example>
                 <example>I could have bought this house!</example>
@@ -3507,7 +3519,7 @@ USA
                     <token postag="VBN|JJ" postag_regexp="yes"><exception>course</exception></token>
                 </pattern>
                 <message>It's never correct to use &quot;of&quot; after a modal verb. Use <suggestion>\2 have</suggestion>.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (verb phrase error)
                 <example correction="will have">It <marker>will of</marker> been discovered by tomorrow.</example>
                 <example>It was the will of world citizens to fix the problem.</example>
                 <example>I will have that dress!</example>
