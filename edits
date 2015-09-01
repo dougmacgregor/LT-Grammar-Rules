@@ -3535,7 +3535,7 @@ USA
                 <token postag="VBN"/>
             </pattern>
             <message>It's never correct to use 'of' after 'had' to form a 'pluperfect' tense. Use <suggestion>had</suggestion>.</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (verb tense error)
             <example>I had bought this house.</example>
             <example correction="had">I <marker>had of</marker> bought this house.</example>
         </rule>
@@ -3548,7 +3548,7 @@ USA
                 <token postag="NN.*" postag_regexp="yes"/>
             </pattern>
             <message>Did you mean <suggestion>one's</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (missing apostrophe)
             <example>The common ones clashing with the noble ones</example>
             <example>One should always wash one's feet in the morning.</example>
             <example correction="one's">One should always wash <marker>ones</marker> feet in the morning.</example>
@@ -3566,7 +3566,7 @@ USA
                     <token><exception regexp="yes">\p{Punct}</exception></token>
                 </pattern>
                 <message>Possible typo: apostrophe is missing. Did you mean <suggestion><match no="3"/>'</suggestion> or <suggestion><match suppress_misspelled="yes" no="3" postag="NN(P)?S" postag_regexp="yes" postag_replace="NN$1(:U.?)?" setpos="no"/>'s</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (missing apostrophe)
                 <example>This is a transcript of the president's speech.</example>
                 <example>Publishers today are at loss...</example>
                 <example>Owen was seven years younger.</example>
@@ -3590,7 +3590,7 @@ USA
                     <token regexp="yes">\p{Punct}</token>
                 </pattern>
                 <message>Possible typo: apostrophe is missing. Did you mean <suggestion><match no="3"/>'</suggestion> or <suggestion><match no="3" postag="NN(P)?S" postag_regexp="yes" postag_replace="NN$1(:U.?)?" setpos="no"/>'s</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (missing apostrophe)
                 <example>This is a transcript of the president's speech.</example>
                 <example>Publishers today are at loss...</example>
                 <example>The Romans may have marked the centre of Londinium.</example>
@@ -3612,7 +3612,7 @@ USA
                     <token postag="VBD|VBP" postag_regexp="yes"><exception postag="NN.*|JJ.*" postag_regexp="yes"/><exception>got</exception></token>
                 </pattern>
                 <message>Consider using the plural form here: <suggestion>\2\4</suggestion>.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive/plural confusion)
                 <example>And how funny it'll seem, sending presents to one's own feet!</example>
                 <example correction="teachers">7 reasons why <marker>teacher's</marker> found us top class</example>
                 <example>The whole sky's caved in.</example>
@@ -3628,7 +3628,7 @@ USA
                     <token postag="WRB"/>
                 </pattern>
                 <message>Consider using the plural form here: <suggestion>\1\3</suggestion>.</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (possessive/plural confusion)
                 <example>7 reasons why</example>
                 <example>Here's how the scheme works.</example>
                 <example correction="reasons">7 <marker>reason's</marker> why</example>
@@ -3644,7 +3644,7 @@ USA
                     <token><exception>of</exception><exception postag="NN(:UN?)?" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>\1\2</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (indefinite pronoun error)
                 <example>Anyone needs help here?</example>
                 <example correction="Anyone"><marker>Any one</marker> needs help here?</example>
                 <example>But the Communists never gave sufficient provocation at any one time for the United States to want to risk a limited or an all-out war over Laos.</example>
@@ -3656,7 +3656,7 @@ USA
                     <token regexp="yes">body|thing</token>
                 </pattern>
                 <message>Did you mean <suggestion>\1\2</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (indefinite pronoun error)
                 <example>Nobody seems to care.</example>
                 <example correction="Nobody"><marker>No body</marker> seems to care.</example>
                 <example correction="nothing">There's <marker>no thing</marker> wrong with this sentence.</example>
@@ -3672,7 +3672,7 @@ USA
                     <token postag="PRP"><exception>one</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>maybe</suggestion> (=perhaps)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (verb/adverb confusion)
                 <example correction="Maybe"><marker>May be</marker> I don't understand.</example>
                 <example>That they all may be one...</example>
             </rule>
@@ -3685,7 +3685,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>maybe</suggestion> (=perhaps)?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (verb/adverb confusion)
                 <example correction="maybe">I paid (<marker>may be</marker>) an exorbitant price for this.</example>
                 <example>I paid (maybe) an exorbitant price.</example>
             </rule>
@@ -3699,7 +3699,7 @@ USA
                     <token>while</token>
                 </pattern>
                 <message>This is a non-standard phrase. Did you mean <suggestion>once in a while</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (non-standard phrase)
                 <example correction="once in a while">My computer starts up only <marker>once and a while</marker>.</example>
             </rule>
             <rule>
@@ -3709,7 +3709,7 @@ USA
                     <token>awhile</token>
                 </pattern>
                 <message>This is a non-standard phrase. Did you mean <suggestion>once in a while</suggestion>?</message>
-                <short>Possible typo</short>
+                <short>Possible typo</short> (non-standard phrase)
                 <example correction="once in a while">My computer starts up only <marker>once and awhile</marker>.</example>
             </rule>
         </rulegroup>
@@ -3719,7 +3719,7 @@ USA
                 <token regexp="yes">wine|wines</token>
             </pattern>
             <message>Possible typo. Did you mean <suggestion>sparkling \2</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="sparkling wine">I love <marker>sparking wine</marker>.</example>
             <example>I hate sparkling wine.</example>
         </rule>
@@ -3732,7 +3732,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>very much</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="very much">Thank you <marker>very match</marker>.</example>
             <example>Thank you very much.</example>
         </rule>
@@ -3745,7 +3745,7 @@ USA
                 <token>much</token>
             </pattern>
             <message>Did you mean <suggestion>very</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (verb/adverb confusion)
             <example correction="very">Thank you <marker>vary</marker> much.</example>
         </rule>
         <rule id="ZERO-SUM_GAIN" name="zero-sum gain (game)">
@@ -3754,7 +3754,7 @@ USA
                 <token>gain</token>
             </pattern>
             <message>Did you mean <suggestion>\1 game</suggestion>?</message>
-            <short>Possible typo</short>
+            <short>Possible typo</short> (incorrect word)
             <example correction="zero-sum game">It is a <marker>zero-sum gain</marker> when wages are held flat...</example>
             <example>It is a zero-sum game when wages are held flat...</example>
         </rule>
@@ -3767,6 +3767,7 @@ USA
                 <token regexp="yes">abide|abode|alight|arise|arose|ate|awake|awoke|be|bear|became|befall|befell|began|beget|begin|begot|behold|bend|beseech|betake|bethink|betook|bind|bit|bite|bleed|blew|blow|bore|break|breed|bring|broke|browbeat|build|burn|buy|came|catch|chide|choose|chose|clap|cling|clothe|creep|dare|daydream|deal|did|dig|disprove|dive|do|dove|drank|draw|dream|drew|drink|drive|drove|dwell|eat|fall|feed|feel|fell|fight|find|flee|flew|fling|fly|forbade|forbear|forbid|forbore|forego|foresaw|foresee|foretell|forewent|forgave|forget|forgive|forgot|forsake|forsook|forswear|freeze|frostbite|froze|gainsay|gave|get|gild|give|go|grew|grind|grow|hang|have|hear|heave|hew|hewed|hid|hide|hold|inbreed|inlay|keep|kneel|knew|know|lade|landslide|lay|lead|lean|leap|learn|leave|lend|lie|light|lose|make|mean|meet|mislead|misspell|mistake|mistook|misunderstand|mow|outdid|outdo|outgrew|outgrow|outlay|outran|outride|outshine|overbore|overcame|overdo|overeat|overhang|overhear|overlay|overleap|overlie|overran|override|oversaw|oversee|overtake|overthrew|overthrow|overtook|overwrite|partake|partook|pay|plead|prove|ran|rang|rebuild|redid|redo|reeve|refit|regrow|relay|relight|remake|rend|repay|retake|retell|rethink|retook|rewind|rewrite|rewrote|ride|ring|rise|rived|rode|rose|sang|sank|saw|say|see|seek|sell|send|sew|shake|shave|shear|sheared|shine|shoe|shook|shoot|show|showed|shrank|shrink|sing|sink|sit|slay|sleep|slide|sling|slink|smell|smite|sneak|sow|sowed|speak|speed|spell|spend|spill|spin|spoil|spoke|sprang|spring|stand|stank|stave|steal|stick|sting|stink|stole|strew|strewed|stride|strike|string|strip|strive|strode|strove|sunburn|swam|swear|sweep|swell|swelled|swim|swing|swore|take|teach|tear|tell|think|threw|thrive|throve|throw|took|tore|tread|troubleshoot|typewrite|unbend|unbind|undergo|underlay|underlie|undersell|understand|undertake|undertook|underwent|undid|undo|unlearn|unmake|unsay|unwind|uphold|vex|wake|was|waylay|wear|weave|wed|weep|went|whet|win|wind|withdraw|withdrew|withhold|withstand|woke|wore|wove|wring|write|wrote</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/><match no="2"/><match no="3"/> <match no="4" postag="VBN"/></suggestion>?</message>
+            (tense error)
             <example correction="haven't bitten">They <marker>haven't bit</marker> their tongue.</example>
             <example>They haven't awoken before nine in a long time.</example>
         </rule>
@@ -3779,6 +3780,7 @@ USA
                 <token regexp="yes">abide|abode|alight|arise|arose|ate|awake|awoke|be|bear|became|befall|befell|began|beget|begin|begot|behold|bend|beseech|betake|bethink|betook|bind|bit|bite|bleed|blew|blow|bore|break|breed|bring|broke|browbeat|build|burn|buy|came|catch|chide|choose|chose|clap|cling|clothe|creep|dare|daydream|deal|did|dig|disprove|dive|do|dove|drank|draw|dream|drew|drink|drive|drove|dwell|eat|fall|feed|feel|fell|fight|find|flee|flew|fling|fly|forbade|forbear|forbid|forbore|forego|foresaw|foresee|foretell|forewent|forgave|forget|forgive|forgot|forsake|forsook|forswear|freeze|frostbite|froze|gainsay|gave|get|gild|give|grew|grind|grow|hang|have|hear|heave|hew|hewed|hid|hide|hold|inbreed|inlay|keep|kneel|knew|know|lade|landslide|lay|lead|lean|leap|learn|leave|lend|lie|light|lose|make|mean|meet|mislead|misspell|mistake|mistook|misunderstand|mow|outdid|outdo|outgrew|outgrow|outlay|outran|outride|outshine|overbore|overcame|overdo|overeat|overhang|overhear|overlay|overleap|overlie|overran|override|oversaw|oversee|overtake|overthrew|overthrow|overtook|overwrite|partake|partook|pay|plead|prove|ran|rang|rebuild|redid|redo|reeve|refit|regrow|relay|relight|remake|rend|repay|retake|retell|rethink|retook|rewind|rewrite|rewrote|ride|ring|rise|rived|rode|rose|sang|sank|saw|say|see|seek|sell|send|sew|shake|shave|shear|sheared|shine|shoe|shook|shoot|show|showed|shrank|shrink|sing|sink|sit|slay|sleep|slide|sling|slink|smell|smite|sneak|sow|sowed|speak|speed|spell|spend|spill|spin|spoil|spoke|sprang|spring|stand|stank|stave|steal|stick|sting|stink|stole|strew|strewed|stride|strike|string|strip|strive|strode|strove|sunburn|swam|swear|sweep|swell|swelled|swim|swing|swore|take|teach|tear|tell|think|threw|thrive|throve|throw|took|tore|tread|troubleshoot|typewrite|unbend|unbind|undergo|underlay|underlie|undersell|understand|undertake|undertook|underwent|undid|undo|unlearn|unmake|unsay|unwind|uphold|vex|wake|was|waylay|wear|weave|wed|weep|went|whet|win|wind|withdraw|withdrew|withhold|withstand|woke|wore|wove|wring|write|wrote</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/><match no="2"/><match no="3"/> <match no="4" postag="VBN"/></suggestion>?</message>
+            (tense error)
             <example correction="could've eaten">We <marker>could've ate</marker> the chicken.</example>
             <example>We could've eaten the chicken.</example>
         </rule>
@@ -3790,6 +3792,7 @@ USA
                 <token>day</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> everyday</suggestion>?</message>
+            (adjective/noun confusion)
             <example correction="for everyday">They like to look <marker>for every day</marker> occurrences.</example>
             <example>They like to look for everyday occurrences.</example>
         </rule>
@@ -3800,6 +3803,7 @@ USA
                 <token>ways</token>
             </pattern>
             <message>Did you mean <suggestion>always</suggestion>?</message>
+            (adverb/noun confusion)
             <example correction="always">He <marker>all ways</marker> takes the last piece of cake.</example>
             <example>He always takes the cake.</example>
         </rule>
@@ -3810,6 +3814,7 @@ USA
                 <token>where</token>
             </pattern>
             <message>Did you mean <suggestion>everywhere</suggestion>?</message>
+            (adverb error)
             <example correction="everywhere">There are bugs <marker>every where</marker>.</example>
             <example>We through the trash everywhere.</example>
         </rule>
@@ -3820,6 +3825,7 @@ USA
                 <token>head</token>
             </pattern>
             <message>Did you mean <suggestion>figurehead</suggestion>?</message>
+            (compound word error)
             <example correction="figurehead">The boss was merely a <marker>figure head</marker>.</example>
             <example>The boss was merely a figurehead.</example>
         </rule>
@@ -3830,6 +3836,7 @@ USA
                 <token>ship</token>
             </pattern>
             <message>Did you mean <suggestion>flagship</suggestion>?</message>
+            (compound word error)
             <example correction="flagship">This was the <marker>flag ship</marker> store.</example>
             <example>This was the flagship store.</example>
         </rule>
@@ -3840,6 +3847,7 @@ USA
                 <token>gear</token>
             </pattern>
             <message>Did you mean <suggestion>headgear</suggestion>?</message>
+            (compound word error)
             <example correction="headgear">She wore <marker>head gear</marker>.</example>
             <example>She wore headgear.</example>
         </rule>
@@ -3850,6 +3858,7 @@ USA
                 <token>quarters</token>
             </pattern>
             <message>Did you mean <suggestion>headquarters</suggestion>?</message>
+            (compound word error)
             <example correction="headquarters">He found the secret <marker>head quarters</marker>.</example>
             <example>He found the headquarters.</example>
         </rule>
@@ -3860,6 +3869,7 @@ USA
                 <token>stone</token>
             </pattern>
             <message>Did you mean <suggestion>headstone</suggestion>?</message>
+            (compound word error)
             <example correction="headstone">They wrote the words on his <marker>head stone</marker>.</example>
             <example>He had a slightly cracked headstone.</example>
         </rule>
@@ -3870,6 +3880,7 @@ USA
                 <token>wear</token>
             </pattern>
             <message>Did you mean <suggestion>headwear</suggestion>?</message>
+            (compound word error)
             <example correction="headwear">The Mets cap was his favorite <marker>head wear</marker>.</example>
             <example>The Yankees cap was his favorite headwear.</example>
         </rule>
@@ -3880,6 +3891,7 @@ USA
                 <token>ever</token>
             </pattern>
             <message>Did you mean <suggestion>however</suggestion>?</message>
+            (conjunction error)
             <example correction="however">We knew, <marker>how ever</marker>, that he would come around.</example>
             <example>However, this was strictly unnecessary.</example>
         </rule>
@@ -3890,6 +3902,7 @@ USA
                 <token>note</token>
             </pattern>
             <message>Did you mean <suggestion>keynote</suggestion>?</message>
+            (compound word error)
             <example correction="keynote">The <marker>key note</marker> speaker was Bill Gates.</example>
             <example>The keynote speaker was Bill Gates.</example>
         </rule>
@@ -3900,6 +3913,7 @@ USA
                 <token>stock</token>
             </pattern>
             <message>Did you mean <suggestion>laughingstock</suggestion>?</message>
+            (compound word error)
             <example correction="laughingstock">The fool was the <marker>laughing stock</marker> of the town.</example>
             <example>The fool was the laughingstock of the town.</example>
         </rule>
@@ -3910,6 +3924,7 @@ USA
                 <token>time</token>
             </pattern>
             <message>Did you mean <suggestion>lifetime</suggestion>?</message>
+            (compound word error)
             <example correction="lifetime">In his <marker>life time</marker>, there will be many medical advances.</example>
             <example>In his lifetime, there will be many medical advances.</example>
         </rule>
@@ -3920,6 +3935,7 @@ USA
                 <token>while</token>
             </pattern>
             <message>Did you mean <suggestion>meanwhile</suggestion>?</message>
+            (conjunction error)
             <example correction="Meanwhile"><marker>Mean while</marker>, back on the farm...</example>
             <example>Meanwhile, back on the farm...</example>
         </rule>
@@ -3930,6 +3946,7 @@ USA
                 <token>wide</token>
             </pattern>
             <message>Did you mean <suggestion>nationwide</suggestion>?</message>
+            (compound word error)
             <example correction="nationwide">There was a <marker>nation wide</marker> epidemic.</example>
             <example>There was a nationwide epidemic.</example>
         </rule>
@@ -3940,6 +3957,7 @@ USA
                 <token>by</token>
             </pattern>
             <message>Did you mean <suggestion>nearby</suggestion>?</message>
+            (adverb/adjective error)
             <example correction="nearby">There were some stores <marker>near by</marker>.</example>
             <example>There were some stores nearby.</example>
         </rule>
@@ -3950,6 +3968,7 @@ USA
                 <token>comer</token>
             </pattern>
             <message>Did you mean <suggestion>newcomer</suggestion>?</message>
+            (compound word error)
             <example correction="newcomer">There was a <marker>new comer</marker> to the party.</example>
             <example>There was a newcomer to the party.</example>
         </rule>
@@ -3960,6 +3979,7 @@ USA
                 <token>worthy</token>
             </pattern>
             <message>Did you mean <suggestion>noteworthy</suggestion>?</message>
+            (compound word error)
             <example correction="noteworthy">This was a <marker>note worthy</marker> achievement.</example>
             <example>This was a noteworthy achievement.</example>
         </rule>
@@ -3971,6 +3991,7 @@ USA
                 <token>days</token>
             </pattern>
             <message>Did you mean <suggestion>nowadays</suggestion>?</message>
+            (compound word error)
             <example correction="Nowadays"><marker>Now a days</marker>, there isn't much hope.</example>
             <example>Nowadays, there isn't much hope.</example>
         </rule>
@@ -3981,6 +4002,7 @@ USA
                 <token>going</token>
             </pattern>
             <message>Did you mean <suggestion>ongoing</suggestion>?</message>
+            (compound word error)
             <example correction="ongoing">There is an <marker>on going</marker> investigation.</example>
             <example>She insisted on going for a drive.</example>
             <example>There is an ongoing investigation.</example>
@@ -3992,6 +4014,7 @@ USA
                 <token>grow</token>
             </pattern>
             <message>Did you mean <suggestion>outgrow</suggestion>?</message>
+            (compound word error)
             <example correction="outgrow">The little guy would soon <marker>out grow</marker> his clothes.</example>
             <example>The little guy would soon outgrow his clothes.</example>
         </rule>
@@ -4002,6 +4025,7 @@ USA
                 <token>side</token>
             </pattern>
             <message>Did you mean <suggestion>outside</suggestion>?</message>
+            (compound word error)
             <example correction="outside">There were more tables <marker>out side</marker>.</example>
             <example>There were more tables outside.</example>
         </rule>
@@ -4012,6 +4036,7 @@ USA
                 <token>looked</token>
             </pattern>
             <message>Did you mean <suggestion>overlooked</suggestion>?</message>
+           (compound word error)
             <example correction="overlooked">There were several details we <marker>over looked</marker>.</example>
             <example>There were several details we overlooked.</example>
         </rule>
@@ -4022,6 +4047,7 @@ USA
                 <token>looking</token>
             </pattern>
             <message>Did you mean <suggestion>overlooking</suggestion>?</message>
+            (compound word error)
             <example correction="overlooking">We were <marker>over looking</marker> the Grand Canyon.</example>
             <example>We were overlooking the Grand Canyon.</example>
         </rule>
@@ -4032,6 +4058,7 @@ USA
                 <token>rated</token>
             </pattern>
             <message>Did you mean <suggestion>overrated</suggestion>?</message>
+            (compound word error)
             <example correction="overrated">The movie was highly <marker>over rated</marker>.</example>
             <example>The movie was highly overrated.</example>
         </rule>
@@ -4042,6 +4069,7 @@ USA
                 <token>seas</token>
             </pattern>
             <message>Did you mean <suggestion>overseas</suggestion>?</message>
+            (compound word error)
             <example correction="overseas">He was stationed <marker>over seas</marker>.</example>
             <example>He was stationed overseas.</example>
         </rule>
@@ -4052,6 +4080,7 @@ USA
                 <token>coming</token>
             </pattern>
             <message>Did you mean <suggestion>shortcoming</suggestion>?</message>
+            (compound word error)
             <example correction="shortcoming">Being on time was his biggest <marker>short coming</marker>.</example>
             <example>Being on time was his biggest shortcoming.</example>
         </rule>
@@ -4062,6 +4091,7 @@ USA
                 <token>cut</token>
             </pattern>
             <message>Did you mean <suggestion>shortcut</suggestion>?</message>
+            (compound word error)
             <example correction="shortcut">I know a <marker>short cut</marker>.</example>
             <example>I know a shortcut.</example>
         </rule>
@@ -4072,6 +4102,7 @@ USA
                 <token>kick</token>
             </pattern>
             <message>Did you mean <suggestion>sidekick</suggestion>?</message>
+            (compound word error)
             <example correction="sidekick">He had a zany <marker>side kick</marker>.</example>
             <example>He had a zany sidekick.</example>
         </rule>
@@ -4082,6 +4113,7 @@ USA
                 <token>diving</token>
             </pattern>
             <message>Did you mean <suggestion>skydiving</suggestion>?</message>
+            (compound word error)
             <example correction="skydiving">We went <marker>sky diving</marker>.</example>
             <example>We went skydiving.</example>
         </rule>
@@ -4092,6 +4124,7 @@ USA
                 <token>how</token>
             </pattern>
             <message>Did you mean <suggestion>somehow</suggestion>?</message>
+            (compound word error)
             <example correction="Somehow"><marker>Some how</marker>, we made it out alive.</example>
             <example>Somehow, we made it out alive.</example>
         </rule>
@@ -4102,6 +4135,7 @@ USA
                 <token>mate</token>
             </pattern>
             <message>Did you mean <suggestion>stalemate</suggestion>?</message>
+            (compound word error)
             <example correction="stalemate">The game ended in a <marker>stale mate</marker>.</example>
             <example>The game ended in a stalemate.</example>
         </rule>
@@ -4112,6 +4146,7 @@ USA
                 <token>selves</token>
             </pattern>
             <message>Did you mean <suggestion>themselves</suggestion>?</message>
+            (pronoun error)
             <example correction="themselves">They were falling over <marker>them selves</marker>.</example>
             <example>They were falling over themselves.</example>
         </rule>
@@ -4122,6 +4157,7 @@ USA
                 <token>fire</token>
             </pattern>
             <message>Did you mean <suggestion>backfire</suggestion>?</message>
+            (compound word error)
             <example correction="backfire">His plans always <marker>back fire</marker>.</example>
             <example>His plans always backfire.</example>
         </rule>
@@ -4135,6 +4171,7 @@ USA
                 <token><exception>web</exception></token> <!-- Don't suggest change for "World Wide Web" -->
             </pattern>
             <message>Did you mean <suggestion>worldwide</suggestion>?</message>
+           (compound word error)
             <example correction="worldwide">There was a <marker>world wide</marker> epidemic.</example>
             <example>There was a worldwide epidemic.</example>
         </rule>
@@ -4145,6 +4182,7 @@ USA
                 <token>while</token>
             </pattern>
             <message>Did you mean <suggestion>worthwhile</suggestion>?</message>
+            (compound word error)
             <example correction="worthwhile">It was a <marker>worth while</marker> endeavor.</example>
             <example>It was a worthwhile endeavor.</example>
         </rule>
@@ -4155,6 +4193,7 @@ USA
                 <token>side</token>
             </pattern>
             <message>Did you mean <suggestion>wayside</suggestion>?</message>
+            (compound word error)
             <example correction="wayside">We let it fall by the <marker>way side</marker>.</example>
             <example>We let it fall by the wayside.</example>
         </rule>
@@ -4165,6 +4204,7 @@ USA
                 <token>side</token>
             </pattern>
             <message>Did you mean <suggestion>alongside</suggestion>?</message>
+            (compound word error)
             <example correction="alongside">The car pulled up <marker>along side</marker>.</example>
             <example>The car pulled up alongside.</example>
         </rule>
@@ -4175,6 +4215,7 @@ USA
                 <token>cause</token>
             </pattern>
             <message>Did you mean <suggestion>because</suggestion>?</message>
+            (conjunction error)
             <example correction="because">It was all <marker>be cause</marker> of you.</example>
             <example>It was all because of you.</example>
         </rule>
@@ -4185,6 +4226,7 @@ USA
                 <token>ware</token>
             </pattern>
             <message>Did you mean <suggestion>beware</suggestion>?</message>
+            (verb error)
             <example correction="Beware"><marker>Be ware</marker> of the bears.</example>
             <example>Beware of the bears.</example>
         </rule>
@@ -4195,6 +4237,7 @@ USA
                 <token>hand</token>
             </pattern>
             <message>Did you mean <suggestion>beforehand</suggestion>?</message>
+            (compound word error)
             <example correction="beforehand">We packed <marker>before hand</marker>.</example>
             <example>We packed beforehand.</example>
         </rule>
@@ -4205,6 +4248,7 @@ USA
                 <token>side</token>
             </pattern>
             <message>Did you mean <suggestion>downside</suggestion>?</message>
+            (compound word error)
             <example correction="downside">There was no serious <marker>down side</marker> to the plan.</example>
             <example>There was no serious downside to the plan.</example>
         </rule>
@@ -4215,6 +4259,7 @@ USA
                 <token>out</token>
             </pattern>
             <message>Did you mean <suggestion>throughout</suggestion>?</message>
+            (compound word error)
             <example correction="throughout">We felt awkward <marker>through out</marker> the play.</example>
             <example>We felt awkward throughout the play.</example>
         </rule>
@@ -4224,6 +4269,7 @@ USA
                 <token>on-going</token>
             </pattern>
             <message>Did you mean <suggestion>ongoing</suggestion>?</message>
+            (compound word error)
             <example correction="ongoing">There is an <marker>on-going</marker> investigation.</example>
             <example>There is an ongoing investigation.</example>
         </rule>
@@ -4234,6 +4280,7 @@ USA
                 <token>weight</token>
             </pattern>
             <message>Did you mean <suggestion>lightweight</suggestion>?</message>
+            (compound word error)
             <example correction="lightweight">He is the best <marker>light weight</marker> boxer in the world.</example>
             <example>He is the best lightweight boxer in the world.</example>
         </rule>
@@ -4244,6 +4291,7 @@ USA
                 <token>weight</token>
             </pattern>
             <message>Did you mean <suggestion>heavyweight</suggestion>?</message>
+            (compound word error)
             <example correction="heavyweight">He is the best <marker>heavy weight</marker> boxer in the world.</example>
             <example>He is the best heavyweight boxer in the world.</example>
         </rule>
@@ -4254,6 +4302,7 @@ USA
                 <token>lance</token>
             </pattern>
             <message>Did you mean <suggestion>freelance</suggestion>?</message>
+            (compound word error)
             <example correction="freelance">We did some <marker>free lance</marker> work for the company.</example>
             <example>We did some freelance work for the company.</example>
         </rule>
@@ -4264,6 +4313,7 @@ USA
                 <token>lancer</token>
             </pattern>
             <message>Did you mean <suggestion>freelancer</suggestion>?</message>
+            (compound word error)
             <example correction="freelancer">He was a <marker>free lancer</marker>.</example>
             <example>He was a freelancer.</example>
         </rule>
@@ -4274,6 +4324,7 @@ USA
                 <token>lances</token>
             </pattern>
             <message>Did you mean <suggestion>freelances</suggestion>?</message>
+            (compound word error)
             <example correction="freelances">He only <marker>free lances</marker> for the CIA.</example>
             <example>He only freelances for the CIA.</example>
         </rule>
@@ -4284,6 +4335,7 @@ USA
                 <token>lancing</token>
             </pattern>
             <message>Did you mean <suggestion>freelancing</suggestion>?</message>
+            (compound word error)
             <example correction="freelancing">His <marker>free lancing</marker> work is fantastic.</example>
             <example>His freelancing work is fantastic.</example>
         </rule>
@@ -4298,6 +4350,7 @@ USA
                 <token><exception>longer</exception></token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> awhile</suggestion>?</message>
+            (adverb/noun confusion)
             <example correction="forget awhile">He was expected to <marker>forget a while</marker> after the fact.</example>
             <example>He was expected to stay awhile.</example>
         </rule>
@@ -4308,6 +4361,7 @@ USA
                 <token regexp="yes">site|sight</token>
             </pattern>
             <message>Did you mean <suggestion>website</suggestion>?</message>
+            (compound word error)
             <example correction="website">The <marker>web site</marker> was down.</example>
             <example>The website was down.</example>
         </rule>
@@ -4318,6 +4372,7 @@ USA
                 <token>scarf</token>
             </pattern>
             <message>Did you mean <suggestion>headscarf</suggestion>?</message>
+            (compound word error)
             <example correction="headscarf">France had a ban on the <marker>head scarf</marker>.</example>
             <example>France had a ban on the headscarf.</example>
         </rule>
@@ -4328,6 +4383,7 @@ USA
                 <token>scarves</token>
             </pattern>
             <message>Did you mean <suggestion>headscarves</suggestion>?</message>
+            (compound word error)
             <example correction="headscarves">France had a ban on <marker>head scarves</marker>.</example>
             <example>France had a ban on headscarves.</example>
         </rule>
@@ -4338,6 +4394,7 @@ USA
                 <token>words</token>
             </pattern>
             <message>Did you mean <suggestion>keywords</suggestion>?</message>
+            (compound word error)
             <example correction="keywords">You have to enter the <marker>key words</marker>.</example>
             <example>You have to enter the keywords.</example>
         </rule>
@@ -4348,6 +4405,7 @@ USA
                 <token>sourcing</token>
             </pattern>
             <message>Did you mean <suggestion>crowdsourcing</suggestion>?</message>
+            (compound word error)
             <example correction="crowdsourcing">Mechanical Turk is an example of <marker>crowd sourcing</marker>.</example>
             <example>Mechanical Turk is an example of crowdsourcing.</example>
         </rule>
@@ -4358,6 +4416,7 @@ USA
                 <token>data</token>
             </pattern>
             <message>Did you mean <suggestion>metadata</suggestion>?</message>
+            (compound word error)
             <example correction="metadata">Tika's library takes <marker>meta data</marker> into account.</example>
             <example>Tika's library takes metadata into account.</example>
         </rule>
@@ -4368,6 +4427,7 @@ USA
                 <token>alone</token>
             </pattern>
             <message>Did you mean <suggestion>standalone</suggestion>?</message>
+            (compound word error)
             <example correction="standalone">I wrote a <marker>stand alone</marker> application.</example>
             <example>I wrote a standalone application.</example>
         </rule>
@@ -4378,6 +4438,7 @@ USA
                 <token>time</token>
             </pattern>
             <message>Did you mean <suggestion>pastime</suggestion>?</message>
+            (compound word error)
             <example correction="pastime">This was America's favorite <marker>past time</marker>.</example>
             <example>This was America's favorite pastime.</example>
         </rule>
@@ -4388,6 +4449,7 @@ USA
                 <token>where</token>
             </pattern>
             <message>Did you mean <suggestion>anywhere</suggestion>?</message>
+            (adverb/noun confusion)
             <example correction="anywhere">Put your stuff down <marker>any where</marker>.</example>
             <example>Put your stuff down anywhere.</example>
         </rule>
@@ -4398,6 +4460,7 @@ USA
                 <token>where</token>
             </pattern>
             <message>Did you mean <suggestion>somewhere</suggestion>?</message>
+            (adverb/noun confusion)
             <example correction="somewhere">There's a place for us, <marker>some where</marker>.</example>
             <example>There's a place for us, somewhere.</example>
         </rule>
@@ -4409,6 +4472,7 @@ USA
                 <token>out</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> bailout</suggestion>?</message>
+            (compound word error) 
             <example correction="The bailout"><marker>The bail out</marker> was too expensive.</example>
             <example>The bailout was too expensive.</example>
         </rule>
@@ -4419,6 +4483,7 @@ USA
                 <token>come</token>
             </pattern>
             <message>Did you mean <suggestion>outcome</suggestion>?</message>
+            (compound word error)
             <example correction="outcome">What was the <marker>out come</marker>?</example>
             <example>What was the outcome?</example>
         </rule>
@@ -4430,6 +4495,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> composed of</suggestion>?</message>
+            (incorrect word)
             <example correction="album composed of">This is an <marker>album comprised of</marker> of great songs.</example>
             <example>This is an album composed of great songs.</example>
         </rule>
@@ -4441,6 +4507,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>area consisting of</suggestion>?</message>
+            (incorrect word)
             <example correction="area consisting of">The Tenderloin is an <marker>area comprised of</marker> the seedy sort.</example>
             <example>The Tenderloin is an area consisting of the seedy sort.</example>
         </rule>
@@ -4452,6 +4519,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>band composed of</suggestion> or <suggestion>band comprising</suggestion>?</message>
+            (incorrect word)
             <example correction="band composed of|band comprising">The Beatles were a <marker>band comprised of</marker> great musicians.</example>
             <example>The Beatles were a band composed of great musicians.</example>
         </rule>
@@ -4463,6 +4531,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>composed <match no="2"/> of</suggestion>?</message>
+            (incorrect word)
             <example correction="composed primarily of">The lawsuit was <marker>comprised primarily of</marker> false accusations.</example>
             <example>The lawsuit was composed primarily of false accusations.</example>
         </rule>
@@ -4474,6 +4543,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> composed of</suggestion>?</message>
+            (incorrect word)
             <example correction="entirely composed of">It was <marker>entirely comprised of</marker> people.</example>
             <example>It was entirely composed of people.</example>
         </rule>
@@ -4485,6 +4555,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>composed \2 \3</suggestion> or <suggestion>comprised \2</suggestion> or <suggestion>consisted \2 \3</suggestion>?</message>
+            (incorrect word)
             <example correction="composed chiefly of|comprised chiefly|consisted chiefly of">The song was <marker>comprised chiefly of</marker> B chords.</example>
             <example>The song was composed chiefly of B chords.</example>
         </rule>
@@ -4495,6 +4566,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprises</suggestion> or <suggestion>consists of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprises|consists of">The part <marker>comprises of</marker> the whole.</example>
             <example>The part comprises the whole.</example>
         </rule>
@@ -4505,6 +4577,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprising</suggestion> or <suggestion>consisting of</suggestion>?</message>
+            verb confusion)
             <example correction="comprising|consisting of">This is a country <marker>comprising of</marker> independent people.</example>
             <example>This is a country consisting of independent people.</example>
         </rule>
@@ -4515,6 +4588,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprise</suggestion> or <suggestion>consist of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprise|consist of">It's tough to think you <marker>comprise of</marker> mostly water.</example>
             <example>It's tough to think you consist of mostly water.</example>
         </rule>
@@ -4526,6 +4600,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprised</suggestion> or <suggestion>consisted of</suggestion> or <suggestion>was composed of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprised|consisted of|was composed of">The proposal <marker>was comprised of</marker> faulty assumptions.</example>
             <example>The proposal consisted of faulty assumptions.</example>
         </rule>
@@ -4537,6 +4612,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprised</suggestion> or <suggestion>were composed of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprised|were composed of">The missiles <marker>were comprised of</marker> nuclear warheads.</example>
             <example>The missiles were composed of nuclear warheads.</example>
         </rule>
@@ -4548,6 +4624,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>which comprised</suggestion> or <suggestion>which consisted of</suggestion> or <suggestion>which was composed of</suggestion>?</message>
+            (verb confusion)
             <example correction="which comprised|which consisted of|which was composed of">The ants, <marker>which comprised of</marker> the colony, were asleep.</example>
             <example>The any, which comprised the colony, were asleep.</example>
         </rule>
@@ -4560,6 +4637,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>will be composed of</suggestion> or <suggestion>will comprise</suggestion> or <suggestion>will consist of</suggestion>?</message>
+            (verb confusion)
             <example correction="will be composed of|will comprise|will consist of">The album <marker>will be comprised of</marker> synthetic sounds.</example>
             <example>The album will be composed of synthetic sounds.</example>
         </rule>
@@ -4571,6 +4649,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>will be composed of</suggestion> or <suggestion>will comprise</suggestion> or <suggestion>will consist of</suggestion>?</message>
+            (verb confusion)
             <example correction="will be composed of|will comprise|will consist of">The ants <marker>will comprise of</marker> the colony.</example>
             <example>The ants will comprise the colony.</example>
         </rule>
@@ -4582,6 +4661,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>would comprise</suggestion> or <suggestion>would consist of</suggestion>?</message>
+            (verb confusion)
             <example correction="would comprise|would consist of">The ants <marker>would comprise of</marker> the colony.</example>
             <example>The ants would comprise the colony.</example>
         </rule>
@@ -4593,6 +4673,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>government composed of</suggestion> or <suggestion>government consisting of</suggestion>?</message>
+            (verb confusion)
             <example correction="government composed of|government consisting of">Theirs was a <marker>government comprised of</marker> warring factions.</example>
             <example>Theirs was a government consisting of warring factions.</example>
         </rule>
@@ -4605,6 +4686,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprises mostly</suggestion> or <suggestion>consists mostly of</suggestion> or <suggestion>is composed mostly of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprises mostly|consists mostly of|is composed mostly of">The government <marker>is comprised mostly of</marker> idiots.</example>
             <example>The government consists mostly of idiots.</example>
         </rule>
@@ -4616,6 +4698,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>comprises</suggestion> or <suggestion>consists of</suggestion> or <suggestion>is composed of</suggestion>?</message>
+            (verb confusion)
             <example correction="comprises|consists of|is composed of">The government <marker>is comprised of</marker> idiots.</example>
             <example>The government consists of great guys.</example>
         </rule>
@@ -4626,6 +4709,7 @@ USA
                 <token>gaffs</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> gaffes</suggestion>?</message>
+            (incorrect word)
             <example correction="political gaffes">There were some serious <marker>political gaffs</marker> committed that day.</example>
             <example>There were some serious political gaffes committed that day.</example>
         </rule>
@@ -4636,6 +4720,7 @@ USA
                 <token>gaff</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> gaffe</suggestion>?</message>
+           (incorrect word)
             <example correction="cultural gaffe">His novel was a huge <marker>cultural gaff</marker>.</example>
             <example>His novel was a huge cultural gaffe.</example>
         </rule>
@@ -4646,6 +4731,7 @@ USA
                 <token postag="MD"><exception postag="MD" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>where <match no="2"/></suggestion>?</message>
+            (incorrect word)
             <example correction="Where could"><marker>Were could</marker> we sleep tonight?</example>
             <example>Where could we sleep tonight?</example>
         </rule>
@@ -4656,6 +4742,7 @@ USA
                 <token>then</token>
             </pattern>
             <message>Did you mean <suggestion>other than</suggestion>?</message>
+            (incorrect word)
             <example correction="other than">There was no one <marker>other then</marker> us at the campsite.</example>
             <example>There was no one other than us at the campsite.</example>
         </rule>
@@ -4666,6 +4753,7 @@ USA
                 <token>aloud</token>
             </pattern>
             <message>Did you mean <suggestion>\1 allowed</suggestion>?</message>
+            (homonym confusion)
             <example correction="was allowed">No dancing <marker>was aloud</marker>.</example>
             <example>No dancing was allowed.</example>
         </rule>
@@ -4676,6 +4764,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>alluded to</suggestion>?</message>
+            (incorrect word)
             <example correction="alluded to">He <marker>eluded to</marker> to engagement at the party.</example>
             <example>He alluded to the engagement at the party.</example>
         </rule>
@@ -4686,6 +4775,7 @@ USA
                 <token>breath</token>
             </pattern>
             <message>Did you mean <suggestion>bated breath</suggestion>?</message>
+            (homonym confusion)
             <example correction="bated breath">We are waiting with <marker>baited breath</marker>.</example>
             <example>We are waiting with bated breath.</example>
         </rule>
@@ -4697,6 +4787,7 @@ USA
                 <token>mind</token>
             </pattern>
             <message>Did you mean <suggestion>bear in mind</suggestion>?</message>
+            (homonym confusion)
             <example correction="Bear in mind"><marker>Bare in mind</marker> that we're alone.</example>
             <example>Bear in mind that we're alone.</example>
         </rule>
@@ -4707,6 +4798,7 @@ USA
                 <token>birth</token>
             </pattern>
             <message>Did you mean <suggestion>playoff berth</suggestion>?</message>
+            (homonym confusion)
             <example correction="playoff berth">The Patriots failed to earn a <marker>playoff birth</marker>.</example>
             <example>The Patriots failed to earn a playoff berth.</example>
         </rule>
@@ -4717,6 +4809,7 @@ USA
                 <token>break</token>
             </pattern>
             <message>Did you mean <suggestion>disc brake</suggestion>?</message>
+            (homonym confusion)
             <example correction="disc brake">The rear wheels are <marker>disc break</marker>.</example>
             <example>The rear wheels are disc brake.</example>
         </rule>
@@ -4728,6 +4821,7 @@ USA
                 <token>breaks</token>
             </pattern>
             <message>Did you mean <suggestion>hit the brakes</suggestion>?</message>
+            (homonym confusion)
             <example correction="hit the brakes">Charlie forgot to <marker>hit the breaks</marker>.</example>
             <example>Charlie forgot to hit the brakes.</example>
         </rule>
@@ -4738,6 +4832,7 @@ USA
                 <token>chord</token>
             </pattern>
             <message>Did you mean <suggestion>spinal cord</suggestion>?</message>
+            (homonym confusion)
             <example correction="spinal cord">There was permanent injury to the <marker>spinal chord</marker>.</example>
             <example>There was permanent injury to the spinal cord.</example>
         </rule>
@@ -4749,6 +4844,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>full complement of</suggestion>?</message>
+            (homonym confusion)
             <example correction="full complement of">He had the <marker>full compliment of</marker> good qualities.</example>
             <example>He had the full complement of good qualities.</example>
         </rule>
@@ -4760,6 +4856,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>in addition to</suggestion>?</message>
+            (incorrect word)
             <example correction="In addition to"><marker>In edition to</marker> failing, he embarrassed himself.</example>
             <example>And in addition to the belt, he had a chartreuse cap.</example>
         </rule>
@@ -4771,6 +4868,7 @@ USA
                 <token>well</token>
             </pattern>
             <message>Did you mean <suggestion>fared as well</suggestion>?</message>
+            (homonym confusion)
             <example correction="fared as well">He <marker>faired as well</marker> as could be expected.</example>
             <example>He fared as well as could be expected.</example>
         </rule>
@@ -4781,6 +4879,7 @@ USA
                 <token regexp="yes">badly|better|far|less|little|much|poorly|quite|rather|slightly|somewhat|well|worse</token>
             </pattern>
             <message>Did you mean <suggestion>fared <match no="2"/></suggestion>?</message>
+            (homonym confusion)
             <example correction="fared badly">It was a pity that the Jets <marker>faired badly</marker>.</example>
             <example>It was a pity that the Mets fared rather well.</example>
         </rule>
@@ -4792,6 +4891,7 @@ USA
                 <token>fourth</token>
             </pattern>
             <message>Did you mean <suggestion>and so forth</suggestion>?</message>
+            (homonym confusion)
             <example correction="and so forth">And so on <marker>and so fourth</marker>.</example>
             <example>And so on and so forth.</example>
         </rule>
@@ -4803,6 +4903,7 @@ USA
                 <token regexp="yes">the|a|an</token>
             </pattern>
             <message>Did you mean <suggestion>put forth <match no="3"/></suggestion>?</message>
+            (homonym confusion)
             <example correction="put forth the">He <marker>put fourth the</marker> proposal.</example>
             <example>He put forth the proposal.</example>
         </rule>
@@ -4813,6 +4914,7 @@ USA
                 <token>place</token>
             </pattern>
             <message>Did you mean <suggestion>fourth place</suggestion>?</message>
+            (homonym confusion)
             <example correction="fourth place">The runner finished in <marker>forth place</marker>.</example>
             <example>The runner finished in fourth place.</example>
         </rule>
@@ -4823,6 +4925,7 @@ USA
                 <token>jam</token>
             </pattern>
             <message>Did you mean <suggestion>door jamb</suggestion>?</message>
+            (homonym confusion)
             <example correction="door jamb">There were scratches all along the <marker>door jam</marker>.</example>
             <example>There were scratches all along the door jamb.</example>
         </rule>
@@ -4833,6 +4936,7 @@ USA
                 <token regexp="yes">dollars|minutes|hours|seconds|calories</token>
             </pattern>
             <message>Did you mean <suggestion>fewer <match no="2"/></suggestion>?</message>
+            (incorrect style)
             <example correction="fewer hours">There were <marker>less hours</marker> to devote to work that day.</example>
             <example>There were fewer dollars in the coffer that weekend.</example>
         </rule>
@@ -4843,6 +4947,7 @@ USA
                 <token regexp="yes">accommodation|advice|access|baggage|bread|equipment|garbage|luggage|money|cattle|knowledge|sand|furniture|meat|food|news|pasta|progress|research|water|freedom|maturity|intelligence|travel|pollution|traffic</token>
             </pattern>
             <message>Did you mean <suggestion>less <match no="2"/></suggestion>?</message>
+            (incorrect style)
             <example correction="less advice">He gave his enemies <marker>fewer advice</marker> than he gave his friends.</example>
             <example>They made less progress towards their goal.</example>
         </rule>
@@ -4854,6 +4959,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> loath to</suggestion>?</message>
+            (homonym confusion)
             <example correction="am loath to">I <marker>am loathe to</marker> continue this conversation.</example>
             <example>I am loath to continue this conversation.</example>
         </rule>
@@ -4864,6 +4970,7 @@ USA
                 <token regexp="yes">effort|record|season|streak|team|the|to</token>
             </pattern>
             <message>Did you mean <suggestion>losing <match no="2"/></suggestion>?</message>
+            (incorrect word)
             <example correction="losing season">The Yankees never had a <marker>loosing season</marker>.</example>
             <example>It was a terrible losing record.</example>
         </rule>
@@ -4874,6 +4981,7 @@ USA
                 <token>point</token>
             </pattern>
             <message>Did you mean <suggestion>moot point</suggestion>?</message>
+            (incorrect word)
             <example correction="moot point">It was a <marker>mute point</marker>, so we ignored it.</example>
             <example>I believe that statement is largely a moot point.</example>
         </rule>
@@ -4885,6 +4993,7 @@ USA
                 <token regexp="yes">interest|interests</token>
             </pattern>
             <message>Did you mean <suggestion>pique \2 \3</suggestion>?</message>
+            (homonym error)
             <example correction="pique his interest">The mere mention of Luxembourg was enough to <marker>peak his interest</marker>.</example>
             <example>The dance music failed to pique his interest.</example>
         </rule>
@@ -4895,6 +5004,7 @@ USA
                 <token>populace</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> populous</suggestion>?</message>
+            (incorrect word)
             <example correction="most populous">Chicago was the <marker>most populace</marker> city.</example>
             <example>California is the most populous state.</example>
         </rule>
