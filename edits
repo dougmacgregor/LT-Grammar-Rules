@@ -5583,7 +5583,7 @@ USA
                 <token>progress</token>
             </pattern>
             <message>Did you mean <suggestion>work in progress</suggestion>?</message>
-            <short>Non-standard phrase/short>
+            <short>Non-standard phrase</short>
             <example correction="work in progress">His symphony was a <marker>working progress</marker>.</example>
             <example>His symphony was a work in progress.</example>
         </rule>
@@ -13018,7 +13018,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>were</suggestion>, the simple past of "to be"?</message>
-            <short>Preposition-verb confusion</>
+            <short>Preposition-verb confusion</short>
             <example correction="were">It seems unlikely that they <marker>where</marker> going to achieve it.</example>
         </rule>
         <rulegroup id="ALTER_BOY" name="confusion of alter/altar">
