@@ -5516,8 +5516,8 @@ USA
                 <token>Hendrix</token>
             </pattern>
             <message>Did you mean <suggestion>Jimi Hendrix</suggestion>?</message>
-            <short>Misspelling</short><
-            example correction="Jimi Hendrix">Some argue that <marker>Jimmy Hendrix</marker> was the best guitarist who ever lived.</example>
+            <short>Misspelling</short>
+            <example correction="Jimi Hendrix">Some argue that <marker>Jimmy Hendrix</marker> was the best guitarist who ever lived.</example>
             <example>Some argue that Jimi Hendrix was the best ever.</example>
         </rule>
         <!-- Phillips Arena::word=Philips Arena::pivots=Phillips,Philips::options=Phillips,Philips -->
@@ -5710,7 +5710,7 @@ USA
                 <token>damn</token>
             </pattern>
             <message>Did you mean <suggestion>couldn't give a damn</suggestion>?</message>
-            <short>Non-standard phrase/short>
+            <short>Non-standard phrase</short>
             <example correction="couldn't give a damn">Frankly, my dear, I <marker>could give a damn</marker>.</example>
             <example>Frankly, my dear, I couldn't give a damn.</example>
         </rule>
@@ -13841,7 +13841,7 @@ USA
                     <token postag="PRP"/>
                 </pattern>
                 <message>'Everyday' is an adjective, and the comma is missing. Did you mean <suggestion>every day, \3</suggestion>?</message>
-                <short>Adjective & comma error</short>
+                <short>[CDATA[Adjective & comma error]]</short>
                 <example>Every day, he gets up early.</example>
                 <example correction="Every day, he"><marker>Everyday he</marker> gets up early.</example>
             </rule>
@@ -16258,7 +16258,7 @@ USA
         <!-- <token min="0">,</token> -->
         <!-- </pattern> -->
         <!-- <message>Remove as unnecessary.</message> -->
-        <!-- <short>Unneccesary complexity</short>
+        <!-- <short>Unneccesary complexity</short> -->
         <!-- <url>http://grammar.ccc.commnet.edu/grammar/concise.htm</url> -->
         <!-- <example correction=""><marker>As far as I am concerned,</marker> there is no need for further protection of woodlands.</example> -->
         <!-- <example>There is no need for further protection of woodlands.</example> -->
@@ -16275,7 +16275,7 @@ USA
         <!-- <token>yet</token> -->
         <!-- </pattern> -->
         <!-- <message>Wordy. Consider <suggestion>yet</suggestion>, <suggestion>still</suggestion>, or <suggestion>so far</suggestion>.</message> -->
-        <!-- <short>Wordiness</short>
+        <!-- <short>Wordiness</short> -->
         <!-- <url>http://grammarist.com/usage/as-yet-as-of-yet/</url> -->
         <!-- <example correction="yet">The place was sold for an <marker>as of yet</marker> unknown sum.</example> -->
         <!-- <example>The place was sold for a <marker>still</marker> unknown sum.</example> -->
@@ -16441,7 +16441,7 @@ USA
             <!-- <token>that</token> -->
             <!-- </pattern> -->
             <!-- <message>Did you mean <suggestion>because</suggestion> or <suggestion>since</suggestion>?</message> -->
-            <!-- <short>Unneccesary complexity</short>
+            <!-- <short>Unneccesary complexity</short> -->
             <!-- <example correction="because|since">Snape disliked them. This could be <marker>because of the fact that</marker> the Weasley twins were trouble-makers.</example> -->
             <!-- <example>Snape disliked them. This could be <marker>because</marker> the Weasley twins were trouble-makers.</example> -->
             <!-- </rule> -->
@@ -16515,7 +16515,7 @@ USA
             <!-- <token>because</token> -->
             <!-- </pattern> -->
             <!-- <message>Did you mean <suggestion>because</suggestion>?</message> -->
-            <!-- <short>Unneccesary complexity</short>
+            <!-- <short>Unneccesary complexity</short> -->
             <!-- <example type="incorrect"><marker>The reason</marker> there’s a hole in the screen door is because I tripped over the cat on my way out.</example> -->
             <!-- <example>There’s a hole in the screen door because I tripped over the cat on my way out.</example> -->
             <!-- </rule> -->
@@ -16894,7 +16894,7 @@ USA
         <!-- <token>to</token> -->
         <!-- </pattern> -->
         <!-- <message>Did you mean <suggestion>to</suggestion>?</message> -->
-        <!-- <short>Wordiness</short>
+        <!-- <short>Wordiness</short> -->
         <!-- <example correction="to">She stood <marker>in order to</marker> see over the crowd.</example> -->
         <!-- <example>She stood <marker>to</marker> see over the crowd.</example> -->
         <!-- </rule> -->
@@ -17373,7 +17373,7 @@ USA
         <!-- <token postag="BB" postag_regexp="yes">overall</token> -->
         <!-- </pattern> -->
         <!-- <message>Remove wordy \1</message> -->
-        <!-- <short>Wordiness</short>
+        <!-- <short>Wordiness</short> -->
         <!-- <example type="incorrect"><marker>Overall</marker>, we are happy.</example> -->
         <!-- <example>We are happy.</example> -->
         <!-- </rule> -->
@@ -17451,7 +17451,7 @@ USA
             <!-- <token>not</token> -->
             <!-- </pattern> -->
             <!-- <message>Verbose. Use <suggestion>wheather</suggestion>.</message> -->
-            <!-- <short>Wordiness</short>
+            <!-- <short>Wordiness</short> -->
             <!-- <example correction="wheather">We do not know <marker>whether or not</marker> we need to be there.</example> -->
             <!-- <example>We do not know <marker>whether</marker> we need to be there.</example> -->
             <!-- </rule> -->
@@ -17623,7 +17623,7 @@ USA
         <!-- <token>in</token> -->
         <!-- </pattern> -->
         <!-- <message>Use <suggestion>in</suggestion>.</message> -->
-        <!-- <short>Wordiness</short>
+        <!-- <short>Wordiness</short> -->
         <!-- <example correction="in">Can I accept orders from buyers <marker>who are located in</marker> other countries?</example> -->
         <!-- <example>Can I accept orders from buyers <marker>in</marker> other countries?</example> -->
         <!-- <example correction="in">Acn9 is a novel protein of gluconeogenesis <marker>that is located in</marker> the mitochondrial intermembrane space.</example> -->
