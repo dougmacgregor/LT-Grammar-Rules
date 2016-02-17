@@ -1877,7 +1877,7 @@ USA
                     <token postag="VBP?" postag_regexp="yes"/>
                 </pattern>
                 <message>Did you mean <suggestion>Shall</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Verb error</short>
                 <example>Shall we dance?</example>
                 <example correction="Shall"><marker>Shell</marker> we dance?</example>
             </rule>
@@ -1891,7 +1891,7 @@ USA
                     <token postag="VB"/>
                 </pattern>
                 <message>Did you mean <suggestion>shall</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Verb error</short>
                 <example>We shall overcome.</example>
                 <example correction="shall">We <marker>shell</marker> overcome.</example>
             </rule>
@@ -1904,7 +1904,7 @@ USA
                 <token regexp="yes">English|attitude</token>
             </pattern>
             <message>Did you mean <suggestion>bad</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="bad">Sorry for my <marker>bed</marker> English.</example>
         </rule>
         <rule id="PIGEON_ENGLISH" name="pigeon (pidgin) English/...">
@@ -1915,7 +1915,7 @@ USA
                 <token regexp="yes">English|French|Spanish|Chinese|Russian</token>
             </pattern>
             <message>Did you mean <suggestion>pidgin</suggestion> (=simplified language)?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="Pidgin"><marker>Pigeon</marker> English is spoken widely across Nigeria.</example>
         </rule>
         <rule id="TELEPHONE_POLL" name="telephone/... poll (pole)">
@@ -2064,7 +2064,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>Then</suggestion>?</message>
-            <short>Incorrect word</short> 
+            <short>Pronoun error</short> 
             <example>And <marker>then</marker> it became clear.</example>
             <example correction="Then"><marker>Them</marker> it became clear.</example>
             <example correction="Then"><marker>Than</marker> it became clear.</example>
@@ -2211,7 +2211,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>where</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Pronoun error</short>
             <example correction="where">Now, this is <marker>were</marker> my ignorance sets in.</example>
         </rule>
         <rule id="ONE_ORE" name="one ore (or)">
@@ -2222,7 +2222,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>or</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Conjunction error</short>
             <example correction="or">Type in one <marker>ore</marker> more words.</example>
         </rule>
         <rule id="THE_ONLY_ON" name="the only on (one)">
@@ -2234,7 +2234,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>one</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Misspelling</short>
             <example correction="one">The trash folder is the only <marker>on</marker> for me that works.</example>
         </rule>
         <rule id="THEIR_IS" name="their (there) is/are">
@@ -2257,7 +2257,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>am</suggestion> (first person of &quot;to be&quot;)?</message>
-            <short>Incorrect article</short>
+            <short>Article error</short>
             <example>Am I An Atheist Or An Agnostic?</example>
             <example correction="am">I <marker>a</marker> not sure.</example>
         </rule>
@@ -2282,7 +2282,7 @@ USA
                 <token>that</token>
             </pattern>
             <message>Did you mean <suggestion>note</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb error</short>
             <example correction="note">Please <marker>not</marker> that saying “Open Source” does not mean very much.</example>
         </rule>
         <rulegroup id="I_AM_NOTE_SURE" name="I'm note (not) sure">
@@ -2296,7 +2296,7 @@ USA
                     <token>sure</token>
                 </pattern>
                 <message>Did you mean <suggestion>not</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Adverb error</short>
                 <example correction="not">I am <marker>note</marker> sure.</example>
             </rule>
             <rule>
@@ -2310,7 +2310,7 @@ USA
                     <token>sure</token>
                 </pattern>
                 <message>Did you mean <suggestion>not</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Adverb error</short>
                 <example correction="not">I'm <marker>note</marker> sure.</example>
             </rule>
         </rulegroup>
@@ -2322,7 +2322,7 @@ USA
                 <token postag="(RB|JJ|NN|NN:.*)" postag_regexp="yes"><exception inflected="yes" regexp="yes">case|tree|job|butter|mixture|flour|bread|oil|shell|cracker|allergy|cake</exception></token>
             </pattern>
             <message>Did you mean <suggestion>not</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example>I love nut oil!</example>
             <example correction="not">I'm <marker>nut</marker> sure.</example>
         </rule>
@@ -2333,7 +2333,7 @@ USA
                 <token>one</token>
             </pattern>
             <message>Did you mean <suggestion>and so on</suggestion> (=&quot;etc.&quot;)?</message>
-            <short>Incorrect word</short>
+            <short>Preposition error</short>
             <example correction="and so on">We think it helps to find bottlenecks <marker>and so one</marker>.</example>
         </rule>
         <rule id="THROUGH_AWAY" name="through (throw) away">
@@ -2344,7 +2344,7 @@ USA
                 <token>away</token>
             </pattern>
             <message>Did you mean <suggestion>throw</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Homonym confusion</short>
             <example correction="throw">Or we just <marker>through</marker> away all bugs.</example>
         </rule>
         <rule id="OR_WAY_IT" name="or way (was) it">
@@ -2356,7 +2356,7 @@ USA
                 <token regexp="yes">(it|that|this)</token>
             </pattern>
             <message>Did you mean <suggestion>was</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb error</short>
             <example correction="was">Or <marker>way</marker> that a very recent change in Qt?</example>
         </rule>
         <rule id="DT_RESPONDS" name="the/a responds (response)">
@@ -2378,7 +2378,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Preposition error</short>
             <example correction="of">It's the only part of KDE I know <marker>off</marker> that uses automasking.</example>
         </rule>
         <rulegroup id="NOT_US1" name="not us (use)">
@@ -2390,7 +2390,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>use</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Verb error</short>
                 <example correction="use">Please do not <marker>us</marker> dispose.</example>
             </rule>
             <rule>
@@ -2402,7 +2402,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>use</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Verb error</short>
                 <example correction="use">Please don't <marker>us</marker> dispose.</example>
             </rule>
         </rulegroup>
@@ -2414,7 +2414,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>think</suggestion> or <suggestion>thinks</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb error</short>
             <example>I <marker>think</marker> that's a good idea.</example>
             <example correction="think|thinks">I <marker>thing</marker> that's a good idea.</example>
         </rule>
@@ -2431,7 +2431,7 @@ USA
                     <token><exception regexp="yes">not|to</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>where</suggestion> or <suggestion>we</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Preposition error</short>
                 <example><marker>We</marker> are in the process of implementing this.</example>
                 <example>These relations were long marked by conflict.</example>
                 <example correction="where|we">They went <marker>were</marker> he wanted.</example>
@@ -2450,7 +2450,7 @@ USA
                     <token postag="VB|VBP" postag_regexp="yes"><exception postag="JJ|VBN" postag_regexp="yes"/><exception regexp="yes">there|they|we|you</exception></token>
                 </pattern>
                 <message>Did you mean <suggestion>where</suggestion> or <suggestion>we</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Preposition error</short>
                 <example><marker>We</marker> are in the process of implementing this.</example>
                 <example correction="Where|We"><marker>Were</marker> are in the process of implementing this.</example>
                 <example>These relations were long marked by conflict.</example>
@@ -2479,7 +2479,7 @@ USA
                 <token postag="PRP$"/>
             </pattern>
             <message>Did you mean <suggestion>for</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Preposition error</short>
             <example correction="for">Thanks again <marker>fore</marker> your help.</example>
         </rule>
         <rule id="LESS_MORE_THEN" name="less/more ... then (than)">
@@ -2492,7 +2492,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>than</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Conjunction error</short>
             <example correction="than">It's less controversial <marker>then</marker> one would think.</example>
             <example correction="than">It's a less controversial decision <marker>then</marker> one would think.</example>
             <!-- known false alarm: If the structure is one or more thin layers then it will reflect some wavelengths and transmit others. -->
@@ -2596,7 +2596,7 @@ USA
                     <token regexp="yes">cake|work|information</token>
                 </pattern>
                 <message>Did you mean <suggestion>piece</suggestion>?</message>
-                <short>Homonym error</short>
+                <short>Homonym confusion</short>
                 <example correction="piece">It's a <marker>peace</marker> of cake!</example>
                 <example>It's a piece of cake!</example>
             </rule>
@@ -2625,7 +2625,7 @@ USA
                 <token negate="yes" regexp="yes">(and|to)</token>
             </pattern>
             <message>Did you mean <suggestion>of course</suggestion> (=naturally)?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example>The law of cause and effect.</example>
             <example correction="Of course"><marker>Of cause</marker> all these things are relative.</example>
         </rule>
@@ -2637,7 +2637,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>at</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Preposition error</short>
             <example correction="at">Although I must admit when I look <marker>ate</marker> the paperback...</example>
         </rule>
         <rule id="A_KNOW_BUG" name="a know (known) bug/problem" type="grammar">
@@ -2658,7 +2658,7 @@ USA
                 <token>be</token>
             </pattern>
             <message>Did you mean <suggestion>may be</suggestion> or <suggestion>might be</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example>Something that <marker>might be</marker> interesting...</example>
             <example>Something that <marker>may be</marker> interesting...</example>
             <example correction="may be|might be">Something that <marker>my be</marker> interesting...</example>
@@ -3385,7 +3385,7 @@ USA
                     <token><exception postag="NN.*|JJ.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Incorrect word</short>
+                <short>Adverb error</short>
                 <example correction="now">There <marker>no</marker> will be a park.</example>
                 <example>Although in no state the repression has been as great as it was in Soviet times.</example>
                 <example>There was evidently no thought of their being published.</example>
@@ -3399,7 +3399,7 @@ USA
                     <token postag="CC|DT|IN|MD|NP|RP|WDT|WP|WRB" postag_regexp="yes"><exception regexp="yes">such|for</exception><exception postag="JJR|NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Incorrect word</short>
+                <short>Adverb error</short>
                 <example>Get out of bed no later than ten minutes after the alarm goes off.</example>
                 <example correction="now">There's <marker>no</marker> a new building.</example>
                 <example>I had to say no to them.</example>
@@ -3412,7 +3412,7 @@ USA
                     <token regexp="yes">were|was|been|be|is</token>
                 </pattern>
                 <message>Did you mean <suggestion>now</suggestion> (=at this moment) instead of 'no' (negation)?</message>
-                <short>Incorrect word</short>
+                <short>Adverb error</short>
                 <example correction="Now"><marker>No</marker> is the right time.</example>
             </rule>
         </rulegroup>
@@ -3425,7 +3425,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>off</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example correction="off">The light was switched <marker>of</marker></example>
             <example>The light was turned <marker>off</marker></example>
         </rule>
@@ -3485,7 +3485,7 @@ USA
                 <token>manger</token>
             </pattern>
             <message>Did you mean <suggestion>\1 manager</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="project manager">He's our new <marker>project manger</marker>.</example>
             <example>Jesus lies in the manger.</example>
             <example>He's our new project manager.</example>
@@ -3718,7 +3718,7 @@ USA
                 <token regexp="yes">wine|wines</token>
             </pattern>
             <message>Possible typo. Did you mean <suggestion>sparkling \2</suggestion>?</message>
-            <short>PIncorrect word</short>
+            <short>Adjective error</short>
             <example correction="sparkling wine">I love <marker>sparking wine</marker>.</example>
             <example>I hate sparkling wine.</example>
         </rule>
@@ -3731,7 +3731,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion>very much</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example correction="very much">Thank you <marker>very match</marker>.</example>
             <example>Thank you very much.</example>
         </rule>
@@ -3753,7 +3753,7 @@ USA
                 <token>gain</token>
             </pattern>
             <message>Did you mean <suggestion>\1 game</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="zero-sum game">It is a <marker>zero-sum gain</marker> when wages are held flat...</example>
             <example>It is a zero-sum game when wages are held flat...</example>
         </rule>
@@ -4494,7 +4494,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> composed of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="album composed of">This is an <marker>album comprised of</marker> of great songs.</example>
             <example>This is an album composed of great songs.</example>
         </rule>
@@ -4506,7 +4506,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>area consisting of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="area consisting of">The Tenderloin is an <marker>area comprised of</marker> the seedy sort.</example>
             <example>The Tenderloin is an area consisting of the seedy sort.</example>
         </rule>
@@ -4518,7 +4518,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>band composed of</suggestion> or <suggestion>band comprising</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="band composed of|band comprising">The Beatles were a <marker>band comprised of</marker> great musicians.</example>
             <example>The Beatles were a band composed of great musicians.</example>
         </rule>
@@ -4530,7 +4530,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>composed <match no="2"/> of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="composed primarily of">The lawsuit was <marker>comprised primarily of</marker> false accusations.</example>
             <example>The lawsuit was composed primarily of false accusations.</example>
         </rule>
@@ -4542,7 +4542,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> composed of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="entirely composed of">It was <marker>entirely comprised of</marker> people.</example>
             <example>It was entirely composed of people.</example>
         </rule>
@@ -4554,7 +4554,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>composed \2 \3</suggestion> or <suggestion>comprised \2</suggestion> or <suggestion>consisted \2 \3</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="composed chiefly of|comprised chiefly|consisted chiefly of">The song was <marker>comprised chiefly of</marker> B chords.</example>
             <example>The song was composed chiefly of B chords.</example>
         </rule>
@@ -4708,7 +4708,7 @@ USA
                 <token>gaffs</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> gaffes</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="political gaffes">There were some serious <marker>political gaffs</marker> committed that day.</example>
             <example>There were some serious political gaffes committed that day.</example>
         </rule>
@@ -4719,7 +4719,7 @@ USA
                 <token>gaff</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> gaffe</suggestion>?</message>
-           <short>Incorrect word</short>
+           <short>Noun error</short>
             <example correction="cultural gaffe">His novel was a huge <marker>cultural gaff</marker>.</example>
             <example>His novel was a huge cultural gaffe.</example>
         </rule>
@@ -4730,7 +4730,7 @@ USA
                 <token postag="MD"><exception postag="MD" negate_pos="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>where <match no="2"/></suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Preposition error</short>
             <example correction="Where could"><marker>Were could</marker> we sleep tonight?</example>
             <example>Where could we sleep tonight?</example>
         </rule>
@@ -4741,7 +4741,7 @@ USA
                 <token>then</token>
             </pattern>
             <message>Did you mean <suggestion>other than</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Conjunction error</short>
             <example correction="other than">There was no one <marker>other then</marker> us at the campsite.</example>
             <example>There was no one other than us at the campsite.</example>
         </rule>
@@ -4763,7 +4763,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>alluded to</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="alluded to">He <marker>eluded to</marker> to engagement at the party.</example>
             <example>He alluded to the engagement at the party.</example>
         </rule>
@@ -4855,7 +4855,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>in addition to</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun/adverb confusion</short>
             <example correction="In addition to"><marker>In edition to</marker> failing, he embarrassed himself.</example>
             <example>And in addition to the belt, he had a chartreuse cap.</example>
         </rule>
@@ -4969,7 +4969,7 @@ USA
                 <token regexp="yes">effort|record|season|streak|team|the|to</token>
             </pattern>
             <message>Did you mean <suggestion>losing <match no="2"/></suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Homonym confusion</short>
             <example correction="losing season">The Yankees never had a <marker>loosing season</marker>.</example>
             <example>It was a terrible losing record.</example>
         </rule>
@@ -4980,7 +4980,7 @@ USA
                 <token>point</token>
             </pattern>
             <message>Did you mean <suggestion>moot point</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="moot point">It was a <marker>mute point</marker>, so we ignored it.</example>
             <example>I believe that statement is largely a moot point.</example>
         </rule>
@@ -5003,7 +5003,7 @@ USA
                 <token>populace</token>
             </pattern>
             <message>Did you mean <suggestion><match no="1"/> populous</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="most populous">Chicago was the <marker>most populace</marker> city.</example>
             <example>California is the most populous state.</example>
         </rule>
@@ -5128,7 +5128,7 @@ USA
                 <token>tact</token>
             </pattern>
             <message>Did you mean <suggestion>different tack</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun confusion</short>
             <example correction="different tack">We'll have to try a <marker>different tact</marker>.</example>
             <example>We'll have to try a different tack.</example>
         </rule>
@@ -5201,7 +5201,7 @@ USA
                 <token>havoc</token>
             </pattern>
             <message>Did you mean <suggestion>wreak havoc</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="wreak havoc">The hurricane would go on to <marker>wreck havoc</marker> up and down the coast.</example>
             <example>The hurricane would go on to wreak havoc up and down the coast.</example>
         </rule>
@@ -5538,7 +5538,7 @@ USA
                 <token>with</token>
             </pattern>
             <message>Did you mean <suggestion>jibe with</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="jibe with">That doesn't <marker>jive with</marker> my mental outlook.</example>
             <example>That doesn't jibe with my mental outlook.</example>
         </rule>
@@ -5594,7 +5594,7 @@ USA
                 <token>record</token>
             </pattern>
             <message>Did you mean <suggestion>historical record</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective form error</short>
             <example correction="historical record">The policy was strictly a matter of <marker>historic record</marker>.</example>
             <example>The policy was strictly a matter of historical record.</example>
         </rule>
@@ -5616,7 +5616,7 @@ USA
                 <token>titled</token>
             </pattern>
             <message>Did you mean <suggestion>entitled</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="entitled">The children felt <marker>in titled</marker> to their expensive education.</example>
             <example>The children felt entitled to their expensive education.</example>
         </rule>
@@ -5650,7 +5650,7 @@ USA
                 <token>domain</token>
             </pattern>
             <message>Did you mean <suggestion>eminent domain</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="eminent domain">Their house was claimed due to <marker>imminent domain</marker>.</example>
             <example>Their house was claimed due to eminent domain.</example>
         </rule>
@@ -5674,7 +5674,7 @@ USA
                 <token>prize</token>
             </pattern>
             <message>Did you mean <suggestion>consolation prize</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="consolation prize">The team was so upset, they didn't even claim their <marker>constellation prize</marker>.</example>
             <example>The consolation prize was a trip to the Bahamas.</example>
         </rule>
@@ -5685,7 +5685,7 @@ USA
                 <token>of</token>
             </pattern>
             <message>Did you mean <suggestion>consists of</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confustion</short>
             <example correction="consists of">The city <marker>constitutes of</marker> five boroughs.</example>
             <example>The city consists of five boroughs.</example>
         </rule>
@@ -5721,7 +5721,7 @@ USA
                 <token>regiment</token>
             </pattern>
             <message>Did you mean <suggestion>daily regimen</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun confusion</short>
             <example correction="daily regimen">They had a strict <marker>daily regiment</marker> of calisthenics.</example>
             <example>They had a strict daily regimen of calisthenics.</example>
         </rule>
@@ -5732,7 +5732,7 @@ USA
                 <token>factor</token>
             </pattern>
             <message>Did you mean <suggestion>de facto</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="de facto">There was a <marker>de factor</marker> ban on cigarettes.</example>
             <example>There was a de facto ban on cigarettes.</example>
         </rule>
@@ -5778,7 +5778,7 @@ USA
                 <token>trough</token>
             </pattern>
             <message>Did you mean <suggestion>treasure trove</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun confusion</short>
             <example correction="treasure trove">In the wreckage they found a <marker>treasure trough</marker> of doubloons.</example>
             <example>It was a treasure trove of ideas.</example>
         </rule>
@@ -5882,7 +5882,7 @@ USA
                 <token>progressed</token>
             </pattern>
             <message>Did you mean <suggestion>as time passed</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb error</short>
             <example correction="As time passed"><marker>As time progressed</marker>, the sisters got wiser.</example>
             <example>As time passed, the sisters got wiser.</example>
         </rule>
@@ -6018,7 +6018,7 @@ USA
                 <token>swoop</token>
             </pattern>
             <message>Did you mean <suggestion>fell swoop</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="fell swoop">He completed the symphony in one <marker>fowl swoop</marker>.</example>
             <example>He completed the symphony in one fell swoop.</example>
         </rule>
@@ -6029,7 +6029,7 @@ USA
                 <token>snake</token>
             </pattern>
             <message>Did you mean <suggestion>garter snake</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="garter snake">We found a tiny <marker>gardener snake</marker> in the bushes.</example>
             <example>We found a tiny garter snake in the bushes.</example>
         </rule>
@@ -6040,7 +6040,7 @@ USA
                 <token>day</token>
             </pattern>
             <message>Did you mean <suggestion>heyday</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="heyday">He was never as good as he was in his <marker>hay day</marker>.</example>
             <example>This was the boxer's heyday; he was fantastic.</example>
         </rule>
@@ -6063,7 +6063,7 @@ USA
                 <token>cry</token>
             </pattern>
             <message>Did you mean <suggestion>hue and cry</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="hue and cry">There was a massive <marker>hew and cry</marker> after the beating.</example>
             <example>There was a massive hue and cry after the robbery.</example>
         </rule>
@@ -6074,7 +6074,7 @@ USA
                 <token>well</token>
             </pattern>
             <message>Did you mean <suggestion>might as well</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb error</short>
             <example correction="might as well">We <marker>minus well</marker> break up.</example>
             <example>We might as well break up.</example>
         </rule>
@@ -6085,7 +6085,7 @@ USA
                 <token>chance</token>
             </pattern>
             <message>Did you mean <suggestion>off chance</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="off chance">On the <marker>oft chance</marker> that you get home by nine, could you turn on the oven?</example>
             <example>On the off chance you're alive, could you call me?</example>
         </rule>
@@ -6124,7 +6124,7 @@ USA
                 <token>medal</token>
             </pattern>
             <message>Did you mean <suggestion>pedal to the metal</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun confusion</short>
             <example correction="pedal to the metal">To get by the police car, he put the <marker>pedal to the medal</marker>.</example>
             <example>To get by the cop car, he put the pedal to the metal.</example>
         </rule>
@@ -6207,7 +6207,7 @@ USA
                 <token>iron</token>
             </pattern>
             <message>Did you mean <suggestion>wrought iron</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="wrought iron">She specialized in art done in <marker>rod iron</marker>.</example>
             <example>She specialized in wrought iron art.</example>
         </rule>
@@ -6265,7 +6265,7 @@ USA
                 <token>point</token>
             </pattern>
             <message>Did you mean <suggestion>vantage point</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="vantage point">There was a great <marker>vintage point</marker> on the back side of the hill.</example>
             <example>There was a great vantage point on the back of the hill.</example>
         </rule>
@@ -7045,7 +7045,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion><match no="2" postag="VBD"/></suggestion>?</message>
-            <short>Incorrect tense</short>
+            <short>Tense error</short>
             <example correction='used'>He is <marker>use</marker> to a vegetarian diet.</example>
         </rule>
         <rule id="ON_ADDITION" name="wrong preposition: 'On addition' (In addition)">
@@ -7186,7 +7186,7 @@ USA
                 </marker>
             </pattern>
             <message>Did you mean <suggestion><match no="4" postag="NNS" /></suggestion>?</message>
-            <short>Missing plural form of noun</short>
+            <short>Missing plural form</short>
             <example correction='books'>There are many kinds of <marker>book</marker> in the shop.</example>
             <example type="correct">How Many Kinds Of Immigrant Visas Does It Take To Staff A Startup?</example>
         </rule>
@@ -7274,7 +7274,7 @@ USA
                 </token>
             </pattern>
             <message>Probably a wrong construction: a/the + infinitive</message>
-            <short>article-infinitive error</short>
+            <short>Article-infinitive error</short>
             <example correction=""><marker>a compete</marker> catastrophe.</example>
             <example correction=""><marker>a compete</marker></example>
             <example>a complete catastrophe</example>
@@ -7289,7 +7289,7 @@ USA
                 <token>with</token>
             </pattern>
             <message>Did you mean <suggestion>fine</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example correction="fine">I'm <marker>fined</marker> with that.</example>
             <example>I'm fine with that.</example>
         </rule>
@@ -7426,7 +7426,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>fewer</suggestion>? The noun \2 is countable.</message>
                 <url>http://www3.telus.net/linguisticsissues/commonerrorsinenglish.html</url>
-                <short>Incorrect word</short>
+                <short>Adjective error</short>
                 <example correction="fewer">Ten items or <marker>less</marker></example>
                 <example>Ten items or fewer</example>
             </rule>
@@ -7447,7 +7447,7 @@ USA
                 </pattern>
                 <message>Did you mean <suggestion>fewer</suggestion>? The noun \2 is countable.</message>
                 <url>http://www3.telus.net/linguisticsissues/commonerrorsinenglish.html</url>
-                <short>Incorrect word</short>
+                <short>Adjective error</short>
                 <example correction="fewer">He has <marker>less</marker> items</example>
                 <example>He has fewer items.</example>
                 <example>Present-day students are more or less religious.</example>
@@ -7610,7 +7610,7 @@ USA
                     <token><exception postag="VB.*|MD|JJ|SENT_END" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The adverb '\2' is usually not used at the beginning of a sentence.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction=""><marker>Always</marker> I am happy.</example>
                 <example>I am <marker>always</marker> happy.</example>
@@ -7627,7 +7627,7 @@ USA
                     <token><exception postag="VB.*|MD" postag_regexp="yes"/><exception>since</exception></token>
                 </pattern>
                 <message>The adverb '\2' is usually not used at the beginning of a sentence.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction=""><marker>Ever</marker> it was thus.</example>
                 <example><marker>Ever since</marker> Portugal handed over sovereignty</example>
@@ -7642,7 +7642,7 @@ USA
                     <token postag="SENT_END"/>
                 </pattern>
                 <message>The adverb '\2' is usually not used at the end of a sentence.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction="">I am happy <marker>always</marker>.</example>
                 <example>I am <marker>always</marker> happy.</example>
@@ -7656,7 +7656,7 @@ USA
                     </marker>
                 </pattern>
                 <message>The adverb '\2' is usually put after the verb '\3'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\3 \2</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction="am sometimes">I <marker>sometimes am</marker> happy.</example>
@@ -7671,7 +7671,7 @@ USA
                     </marker>
                 </pattern>
                 <message>The adverb '\2' is usually put after the verb '\3'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\3 \2</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction="am sometimes">I am here and I <marker>sometimes am</marker> happy.</example>
@@ -7687,7 +7687,7 @@ USA
                     <token><exception postag="SENT_END"/></token>
                 </pattern>
                 <message>The adverb '\4' is usually put between '\1' and '\2'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\1 \4 \2 \3</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction="have often been seen">They <marker>have been seen often</marker> together.</example>
@@ -7702,7 +7702,7 @@ USA
                     <token postag_regexp="yes" postag="VB[NG]"><exception negate_pos="yes" postag="VB.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The adverb '\1' is usually put between '\2' and '\3'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\2 \1 \3</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example>They have <marker>often been seen</marker> together.</example>
@@ -7719,7 +7719,7 @@ USA
                     <token postag_regexp="yes" postag="VB[NG]"><exception negate_pos="yes" postag="VB.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The adverb '\3' is usually put between '\1' and '\2'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\1 \3 \2</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example>The human being <marker>is often</marker> regarded as</example>
@@ -7736,7 +7736,7 @@ USA
                     <token><exception postag="VB.*|SENT_END" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The adverb '\2' is usually put before the verb '\1'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\2 \1</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example correction="often go">I <marker>go often</marker> to bed before midnight.</example>
@@ -7753,7 +7753,7 @@ USA
                     </marker>
                 </pattern>
                 <message>The adverb '\2' is usually put between '\3' and '\4'.</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <suggestion>\3 \2 \4</suggestion>
                 <url>http://faculty.washington.edu/marynell/grammar/AdverbPl.html</url>
                 <example>They <marker>usually have</marker> long hind limbs</example>
@@ -7922,7 +7922,7 @@ USA
                     <token>you</token>
                 </pattern>
                 <message>Did you mean <suggestion>\1 you to</suggestion>?</message>
-                <short>Incorrect word order</short>
+                <short>Word order error</short>
                 <example correction="wants you to">He <marker>wants that you</marker> send him an email.</example>
                 <example correction="want you to">They <marker>want that you</marker> send him an email.</example>
                 <example correction="wanted you to">They <marker>wanted that you</marker> send him an email.</example>
@@ -8130,7 +8130,7 @@ USA
                 <token>ones</token>
             </pattern>
             <message>This phrase is probably grammatically incorrect. Write <suggestion>\1</suggestion> instead.</message>
-            <short>Redundant word error</short>
+            <short>Redundant word</short>
             <example correction="These"><marker>These Ones</marker> Are Bitter.</example>
             <example>These Are Bitter.</example>
         </rule>
@@ -8144,7 +8144,7 @@ USA
                 <token postag="VB.*" postag_regexp="yes"><exception postag="NNS"/></token>
             </pattern>
             <message>'Each' and 'every' are used with singular. Did you mean <suggestion>all</suggestion>?</message>
-            <short>Singular form with plural noun error</short>
+            <short>Singular/plural error</short>
             <example correction="All"><marker>Each</marker> children are happy.</example>
             <example><marker>Each</marker> children's services are available...</example>
             <example><marker>Each</marker> children services are available...</example>
@@ -8753,7 +8753,7 @@ USA
         <rule id="ADVERBS_ORDER" name="word order: adverb + auxiliary verb + main verb">
           <pattern mark_from="2"><token regexp="yes">certainly|definitely|probably|undoubtedly|surely</token><token regexp="yes">has|had|have|will</token><token postag="VBN|VB"/>/pattern>
           <message>Place the adverb between </message>
-          <short>Incorrect word order</short>
+          <short>Word order error</short>
           <example>He will <em>probably</em> remember tomorrow.</example>
           <example type="incorrect">He <em>probably</em> will remember tomorrow.</example>
         </rule>
@@ -8806,7 +8806,7 @@ USA
                     <token>as</token>
                 </pattern>
                 <message>Use <suggestion>much</suggestion> or <suggestion>little</suggestion> with uncountable nouns.</message>
-                <short>Incorrect adjective form with uncountable noun</short>
+                <short>Incorrect adjective form</short>
                 <example>John eats as <marker>much</marker> food as Peter.</example>
                 <example>John eats as <marker>little</marker> food as Peter.</example>
                 <example correction="much|little">John eats as <marker>many</marker> food as Peter.</example>
@@ -8822,7 +8822,7 @@ USA
                     <token><exception postag="NNS"/></token>
                 </pattern>
                 <message>Use <suggestion>much</suggestion> or <suggestion>little</suggestion> with uncountable nouns.</message>
-                <short>Incorrect adjective form with uncountable noun</short>
+                <short>Incorrect adjective form</short>
                 <example>She has <marker>much</marker> money.</example>
                 <example>There are <marker>many</marker> food plants.</example>
                 <example correction="much|little">She has <marker>many</marker> money.</example>
@@ -9027,7 +9027,7 @@ USA
             </pattern>
             <message>Did you mean: <suggestion><match no="1"/> the <match no="2"/></suggestion>?</message>
             <url>http://pl.talkenglish.com/Grammar/articles.aspx</url>
-            <short>Missing definite article</short>
+            <short>Missing article</short>
             <example correction="in the past">Something happened <marker>in past</marker>.</example>
             <example>Something happened in the past.</example>
         </rule>
@@ -9046,7 +9046,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a friend|the friend">He is <marker>friend</marker>.</example>
                 <example>He is a friend.</example>
                 <example>He is my friend.</example>
@@ -9063,7 +9063,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a lot|the lot">He does <marker>lot</marker> of things.</example>
                 <example>He does need us.</example>
                 <example>We do have this kind of attitude.</example>
@@ -9078,7 +9078,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short><Missing article</short>
                 <example>He takes his brother to school.</example>
                 <example>The event takes place here.</example>
                 <example correction="a brother|the brother">He takes <marker>brother</marker> with him.</example>
@@ -9093,7 +9093,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example>He gives his brother a bar of chocolate.</example>
                 <example>This event gives rise to a new era.</example>
                 <example correction="a brother|the brother">He gives <marker>brother</marker> a bar of chocolate.</example>
@@ -9108,7 +9108,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a step|the step">He goes <marker>step</marker> too far.</example>
                 <example>He goes a step too far.</example>
                 <example>This goes <marker>hand</marker> in hand...</example>
@@ -9123,7 +9123,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a tad|the tad">It falls <marker>tad</marker>.</example>
                 <example>Inflation falls a tad.</example>
                 <example>The website falls <marker>victim</marker> to...</example>
@@ -9139,7 +9139,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/> <match no="4"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Mssing article</short>
                 <example correction="a good friend|the good friend">He is <marker>good friend</marker>.</example>
                 <example>He is a good friend.</example>
                 <example>It may require strong AI to be done as well as humans can do it.</example>
@@ -9156,7 +9156,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3"/> <match no="4" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Mssing article</short>
                 <example correction="experienced a problem|experienced the problem">Recently I have <marker>experienced problem</marker>.</example>
                 <example>Recently I have <marker>experienced a problem</marker>.</example>
                 <example>Different as our minds are, yours has nourished mine.</example>
@@ -9173,7 +9173,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3"/> <match no="4" postag="+DT"/> <match no="5"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="experienced a serious problem|experienced the serious problem">Recently I have <marker>experienced serious problem</marker>.</example>
                 <example>Recently I have <marker>experienced a serious problem</marker>.</example>
             </rule>
@@ -9188,7 +9188,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>issing</short>
                 <example correction="an experienced soldier|the experienced soldier">He is <marker>experienced soldier</marker>.</example>
                 <example>He is <marker>an experienced soldier</marker>.</example>
                 <example>Last year Beyeler arranged to sell $1,500,000.</example>
@@ -9210,7 +9210,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/> <match no="4"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="an extremely experienced soldier|the extremely experienced soldier">He is <marker>extremely experienced soldier</marker>.</example>
                 <example>There is only one catch to this idyllic arrangement.</example>
                 <example>He is <marker>an extremely experienced soldier</marker>.</example>
@@ -9229,7 +9229,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="an airport|the airport">He was waiting at <marker>airport</marker>.</example>
                 <example>He was waiting at <marker>the airport</marker>.</example>
             </rule>
@@ -9243,7 +9243,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a new airport|the new airport">He was waiting at <marker>new airport</marker>.</example>
                 <example>He was waiting at <marker>the new airport</marker>.</example>
                 <example>It appeared as something she could not at first cope with.</example>
@@ -9261,7 +9261,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a river|the river">He was waiting by <marker>river</marker>.</example>
                 <example>He was waiting by <marker>the river</marker>.</example>
                 <example>The attack minute by minute</example>
@@ -9278,7 +9278,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a small river|the small river">He was waiting by <marker>small river</marker>.</example>
                 <example>He was waiting by <marker>the small river</marker>.</example>
                 <example>Guests came by chartered plane from all over the country.</example>
@@ -9292,7 +9292,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception><exception>'</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="an answer|the answer">He was waiting for <marker>answer</marker>.</example>
                 <example>He was waiting for <marker>your answer</marker>.</example>
                 <example><marker>For example</marker>, he wrote a letter to me.</example>
@@ -9308,7 +9308,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a swift answer|the swift answer">He was waiting for <marker>swift answer</marker>.</example>
                 <example>He was waiting for <marker>your swift answer</marker>.</example>
                 <example><marker>For example</marker>, he wrote a letter to me.</example>
@@ -9326,7 +9326,7 @@ USA
                     <token><exception postag="NN.*|JJ|C[DC]" postag_regexp="yes"/><exception regexp="yes">\d+|['’]</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a kitchen|the kitchen">The dog spent all day in <marker>kitchen</marker>.</example>
                 <example>He was waiting in the <marker>lobby</marker>.</example>
                 <example>I have exhausted myself day in day out</example>
@@ -9347,7 +9347,7 @@ USA
                     <token><exception postag="NN.*|JJ|C[DC]" postag_regexp="yes"/><exception regexp="yes">\d+</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a lobby|the lobby">He was waiting in <marker>lobby</marker>.</example>
                 <example>He was waiting in the <marker>lobby</marker>.</example>
                 <example correction="a week|the week">Later in <marker>week</marker>.</example>
@@ -9363,7 +9363,7 @@ USA
                       <token><exception postag="NN.*|JJ|CD" postag_regexp="yes"/><exception regexp="yes">\d+</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a large lobby|the large lobby">He was waiting in <marker>large lobby</marker>.</example>
                 <example>He was waiting in the <marker>large lobby</marker>.</example>
                 <example><marker>In fact</marker>, he wrote a letter to me.</example>
@@ -9384,7 +9384,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a covenant|the covenant">ACET would not be able to reclaim tax on <marker>covenant</marker>.</example>
                 <example>Rob Brydon is Keith and Steve Coogan plays Geoff, seen for the first time on screen</example>
                 <example>There is no science on how we are going to adapt.</example>
@@ -9400,7 +9400,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception><exception>'</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="2" postag="+DT"/> <match no="3"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a previous page|the previous page">This remark is on <marker>previous page</marker>.</example>
                 <example>This remark is on <marker>the previous page</marker>.</example>
             </rule>
@@ -9419,7 +9419,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article is probably missing before the noun: <suggestion><match no="4" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a week|the week">Change your filter after <marker>week</marker>.</example>
                 <example>Change your filter after one week.</example>
                 <example>He told me anecdote after anecdote of that extraordinary man.</example>
@@ -9437,7 +9437,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article is probably missing before the noun: <suggestion><match no="4" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a friend|the friend">He is talking about <marker>friend</marker>.</example>
                 <example>He is talking about a friend.</example>
                 <example>Then Jesus arrived at Jordan from Galilee.</example>
@@ -9454,7 +9454,7 @@ USA
                     <token><exception postag="NN.*|CD" postag_regexp="yes"/><exception>free</exception><exception>'</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="4" postag="+DT"/> <match no="5"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a good friend|the good friend">He is talking about <marker>good friend</marker>.</example>
                 <example>He is talking about a good friend.</example>
                 <example>Goodis voiced his objection before City Council's Finance Committee.</example>
@@ -9472,7 +9472,7 @@ USA
                     <token><exception postag="NN.*|JJ|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a month|the month">About <marker>month</marker> before I left it was discussed...</example>
                 <example>About <marker>a month</marker> before I left it was discussed...</example>
                 <example>During Oersted's attendance at the university, it was dull.</example>
@@ -9489,7 +9489,7 @@ USA
                     <token><exception postag="NN.*|JJ|CD" postag_regexp="yes"/></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+DT"/> <match no="4"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a large boat|the large boat">About <marker>large boat</marker>.</example>
                 <example>About <marker>a large boat</marker>.</example>
                 <example>During fiscal year 1959, six courses were conducted.</example>
@@ -9504,7 +9504,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+INDT"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a friend">He is talking of such <marker>friend</marker>.</example>
                 <example>He is talking of such a friend.</example>
                 <example>The most famous such organism is Amoeba proteus.</example>
@@ -9520,7 +9520,7 @@ USA
                     <token><exception postag="NN.*" postag_regexp="yes"/><exception>free</exception></token>
                 </pattern>
                 <message>The article might be missing before the noun: <suggestion><match no="3" postag="+INDT"/> <match no="4"/></suggestion>.</message>
-                <short>Article missing</short>
+                <short>Missing article</short>
                 <example correction="a good friend">He is talking of such <marker>good friend</marker>.</example>
                 <example>He is talking of such a good friend.</example>
             </rule>
@@ -10076,7 +10076,7 @@ USA
                 <token postag="JJS|RBS" postag_regexp="yes"><exception>most</exception></token>
             </pattern>
             <message>Use <suggestion>the</suggestion> with the superlative.</message>
-            <short>Incorrect or missing article</short>
+            <short>Missing article</short>
             <example>And Truly It Is <marker>a</marker> Most Glorious Thing</example>
             <example correction="the">Kyoto is <marker>an</marker> oldest city.</example>
             <example>He made a fortune by writing a best selling novel.</example>
@@ -10304,7 +10304,7 @@ USA
                 <token postag="VB"/>
             </pattern>
             <message>Did you mean <suggestion>used</suggestion>?</message>
-            <short>Incorrect erb tense</short>
+            <short>Incorrect verb tense</short>
             <example>It can be used to save lives</example>
             <example correction="used">He <marker>use</marker> to believe this.</example>
             <example correction="used">Aethera <marker>use</marker> to use this.</example>
@@ -10316,7 +10316,7 @@ USA
                 <token postag="JJ|VBN" postag_regexp="yes"/>
             </pattern>
             <message>Did you mean <suggestion>a more \3</suggestion>?</message>
-            <short>Incorrect word order</short>
+            <short>Word order error</short>
             <example correction="a more detailed">I can give you <marker>more a detailed</marker> description of what's necessary.</example>
             <example correction="a more analyzed">I wish it was <marker>more an analyzed</marker> case</example>
             <example>It is no more a component.</example>
@@ -10849,7 +10849,7 @@ USA
                 <token regexp="yes">I|he|she|we|they</token>
             </pattern>
             <message>Probable usage error. Use <suggestion>\1 \3</suggestion> instead.</message>
-            <short>Incorrect use of conjunction</short>
+            <short>Conjunction error</short>
             <example correction="Because we"><marker>Because of we</marker> didn't want a big train, but we want a fast train.</example>
         </rule>
         <rule id="BOTH_AS_WELL_AS" name="both... as well as (and)">
@@ -11056,7 +11056,7 @@ USA
                 <token postag="MD"><exception>need</exception></token>
             </pattern>
             <message>Possibly wrong usage of '\2' in the question. Did you mean: <suggestion>\4 \3</suggestion>.</message>
-            <short>Modal verb usage error</short>
+            <short>Modal verb error</short>
             <example correction="Can someone"><marker>Does someone can</marker> reproduce what I described before?</example>
             <example>Do you need anything?</example>
         </rule>
@@ -11649,7 +11649,7 @@ USA
                         <token postag='SENT_END' />
                 </pattern>
                 <message>“\2” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>Though</marker> the dog likes to bark.</example>
                 <example correction=""><marker>After</marker> we had dinner.</example>
                 <example>Though the dog likes to bark, it's still a nice dog.</example>
@@ -11694,7 +11694,7 @@ USA
                         <token postag='SENT_END' />
                 </pattern>
                 <message>“\2 \3” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>Even if</marker> the dog likes to bark.</example>
                 <example>Even if the dog likes to bark; it's still a nice dog.</example>
                 <example>That was probably what influenced their decision.</example>
@@ -11733,7 +11733,7 @@ USA
                         <token postag='SENT_END' />
                 </pattern>
                 <message>“\2 \3” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>So if</marker> the dog likes to bark.</example>
                 <example>So if the dog likes to bark; it's still a nice dog.</example>
             </rule>
@@ -11774,7 +11774,7 @@ USA
                         <token postag='SENT_END' />
                 </pattern>
                 <message>“\2 \3 \4” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>So, if</marker> the dog likes to bark.</example>
                 <example>So, if the dog likes to bark; it's still a nice dog.</example>
             </rule>
@@ -11815,7 +11815,7 @@ USA
                     </marker>
                 </pattern>
                 <message>“\2 \3 \4” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>So even if the dog likes to bark.</marker></example>
                 <example>So even if the dog likes to bark; it's still a nice dog.</example>
             </rule>
@@ -11859,7 +11859,7 @@ USA
                     </marker>
                 </pattern>
                 <message>“\2 \3 \4 \5” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>So, even if the dog likes to bark.</marker></example>
                 <example>So, even if the dog likes to bark; it's still a nice dog.</example>
             </rule>
@@ -11893,7 +11893,7 @@ USA
                     <token postag='SENT_END' />
                 </pattern>
                 <message>“\2 \3 \4” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>In order that</marker> the dog guards the house.</example>
                 <example>In order that dog guards the house; it needs to bark loudly.</example>
             </rule>
@@ -11923,7 +11923,7 @@ USA
                         <token postag='SENT_END' />
                 </pattern>
                 <message>“\2 \3” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence. </message>
-                <short>Punctuation error-sentence fragment</short>
+                <short>Sentence fragment</short>
                 <example correction=""><marker>Provided that</marker> the dog guards my house.</example>
                 <example>Provided that the dog guards my house; I do not mind it barking loudly.</example>
             </rule>
@@ -12292,7 +12292,7 @@ USA
                 <token>the</token>
             </pattern>
             <message>Duplicated 'the' in the phrase: '\1 \2 \3'. Did you mean <suggestion>\2 \3</suggestion>?</message>
-            <short>Duplicated 'the'</short>
+            <short>Duplicated article</short>
             <example>It is exactly the same thing.</example>
             <example correction="really the">That’s <marker>the really the</marker> point of these songs.</example>
             <example correction="exactly the">It is <marker>the exactly the</marker> same thing.</example>
@@ -12323,7 +12323,7 @@ USA
                     <token><exception regexp="yes">'|\.</exception></token>
                 </pattern>
                 <message>Maybe you need to remove the second determiner so that only <suggestion>\1</suggestion> or <suggestion>\2</suggestion> is left.</message>
-                <short>Two consecutive articles</short>
+                <short>Article error</short>
                 <example correction="a|this">I like <marker>a this</marker> dog.</example>
                 <example>I like this dog.</example>
                 <example correction="the|this">This is <marker>the this</marker> idea I was talking about!</example>
@@ -12338,7 +12338,7 @@ USA
                     <token><exception regexp="yes">'|\.</exception></token>
                 </pattern>
                 <message>Maybe you need to remove the second determiner so that only <suggestion>\1</suggestion> or <suggestion>\2\3</suggestion> is left.</message>
-                <short>Two consecutive articles</short>
+                <short>Article error</short>
                 <example correction="The|'An"><marker>The 'an</marker> international movie' is interesting.</example>
                 <example>The Thames was once a much broader river.</example>
             </rule>
@@ -12349,7 +12349,7 @@ USA
               <token postag="PRP\$?" postag_regexp="yes"><exception regexp="yes">(?iu)US|[Oo][Nn][Ee]</exception></token>
             </pattern>
             <message>Possible typo. Did you mean <suggestion>\1</suggestion> or <suggestion>\2</suggestion>?</message>
-            <short>'the' with pronoun error</short>
+            <short>Pronoun error</short>
             <example>The cat is on the mat.</example>
             <example correction="the|he">Strode past the now frightened man, entered <marker>the he</marker> house.</example>
             <example>It was an impulse when she was here in Me'a She'arim.</example>
@@ -12676,7 +12676,7 @@ USA
           </pattern>
           <message>Probably a comma is missing here: <suggestion>\1, \2</suggestion>. Or if you want to use a restrictive clause, use <suggestion>\1 that</suggestion>.</message>
           <url>http://andromeda.rutgers.edu/~jlynch/Writing/t.html#that</url>
-          <short>Comma missing</short>
+          <short>Missing comma</short>
           <example correction="house, which|house that">I am going to the <marker>house which</marker> burned down.</example>
           <example>The science fair, which lasted all day, ended with an awards ceremony.</example>
           <example>This is an example (which is dull).</example>
@@ -12846,7 +12846,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>adapt to</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="adapt to">Maybe you will need time to <marker>adopt to</marker> the situation.</example>
             <example>Maybe you will need time to adapt to the situation.</example>
         </rule>
@@ -12880,7 +12880,7 @@ USA
                 <token postag='VBZ|NNS|VB|VBP|NN:UN' postag_regexp='yes'/>
             </pattern>
             <message>Did you mean <suggestion>allay</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <url>http://lessons.englishgrammar101.com/EnglishGrammar101/Module6/Lesson6-8.aspx</url>
             <example correction="allay">I would like to <marker>ally</marker> concern.</example>
             <example>I would like to allay concern.</example>
@@ -12906,7 +12906,7 @@ USA
                 <token>to</token>
             </pattern>
             <message>Did you mean <suggestion>amenable</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb confusion</short>
             <example correction="amenable">You must be <marker>amendable</marker> to compromise.</example>
             <example>You must be amenable to compromise.</example>
         </rule>
@@ -12995,7 +12995,7 @@ USA
                 <token>behave</token>
             </pattern>
             <message>Did you mean <suggestion>on behalf</suggestion> (in the name of, as a representative of)?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="on behalf">They act <marker>on behave</marker> of a user.</example>
         </rule>
         <rule id="WITCH_IS_WRONG" name="witch (which) is wrong">
@@ -13110,7 +13110,7 @@ USA
                 <token>general</token>
             </pattern>
             <message>Did you mean <suggestion>consul general</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <url>http://afterdeadline.blogs.nytimes.com/2013/10/08/close-but-not-quite-4/</url>
             <example correction="consul general">Archer Blood, the <marker>counsel general</marker> in Dacca.</example>
             <example>Archer Blood, the consul general in Dacca.</example>
@@ -13124,7 +13124,7 @@ USA
                 <token>accepted</token>
             </pattern>
             <message>Did you mean <suggestion>widely</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Adverb confusion</short>
             <example correction="widely">This idea is now <marker>wildly</marker> accepted.</example>
             <example>This idea is now widely accepted.</example>
         </rule>
@@ -13137,7 +13137,7 @@ USA
                 <token postag="NN.*" postag_regexp="yes"/>
             </pattern>
             <message>Did you mean <suggestion>thorough</suggestion> (accurate, exhaustive)?</message>
-            <short>Incorrect word</short>
+            <short>Adjective error</short>
             <example correction="thorough">The manual does not have a <marker>through</marker> discussion of the topic.</example>
         </rule>
         <rule id="WAS_WANDERING_IF" name="I was wandering (wondering) if">
@@ -13149,7 +13149,7 @@ USA
                 <token>if</token>
             </pattern>
             <message>Did you mean <suggestion>wondering</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="wondering">I was <marker>wandering</marker> if someone could help me.</example>
         </rule>
         <rule id="KNEW_NEW" name="knew (new)">
@@ -13178,7 +13178,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion><match no="3" regexp_match="pri[sc]" regexp_replace="priz"/></suggestion> (reward)?</message>
-                <short>Incorrect word</short>
+                <short>Noun confusion</short>
                 <example correction="prize">She won a <marker>price</marker>.</example>
             </rule>
             <rule>
@@ -13189,7 +13189,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion><match no="2" regexp_match="pri[sc]" regexp_replace="priz"/></suggestion> (reward)?</message>
-                <short>Incorrect word</short>
+                <short>Noun confusion</short>
                 <example correction="prize">That is the consolation <marker>price</marker>.</example>
                 <example correction="prizes">These are the consolation <marker>prices</marker>.</example>
             </rule>
@@ -13201,7 +13201,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>Nobel Prize</suggestion> (reward)?</message>
-                <short>Incorrect word</short>
+                <short>Noun confusion</short>
                 <example correction="Nobel Prize">That is the <marker>Nobel Price</marker>.</example>
             </rule>
         </rulegroup>
@@ -13214,7 +13214,7 @@ USA
                     <token regexp="yes">spiral|stability</token>
                 </pattern>
                 <message>Did you mean <suggestion>price</suggestion> (cost)?</message>
-                <short>Incorrect word</short>
+                <short>Noun/adjective confusion</short>
                 <example correction="price">This is called <marker>prize</marker> spiral.</example>
             </rule>
         </rulegroup>
@@ -13276,7 +13276,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>side</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Noun confusion</short>
                 <example correction="side">On the positive <marker>site</marker>, there are some improvements.</example>
             </rule>
         </rulegroup>
@@ -13289,7 +13289,7 @@ USA
                     </marker>
                 </pattern>
                 <message>Did you mean <suggestion>site</suggestion>?</message>
-                <short>Incorrect word</short>
+                <short>Noun confusion</short>
                 <example correction="site">There is a construction <marker>side</marker>.</example>
             </rule>
         </rulegroup>
@@ -13426,7 +13426,7 @@ USA
                 <token>it</token>
             </pattern>
             <message>Did you mean <suggestion>care</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun/verb confusion</short>
             <example>We're taking <marker>care</marker> of it.</example>
             <example correction="care">We need to take <marker>case</marker> of it.</example>
             <example correction="care">We took <marker>case</marker> of it.</example>
@@ -13440,7 +13440,7 @@ USA
                 <token>if</token>
             </pattern>
             <message>Did you mean <suggestion>wonder</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Verb confusion</short>
             <example correction="wonder">I <marker>wander</marker> if I'm studying enough?</example>
         </rule>
         <rule id="WORTH_THAN" name="worth (worse) than">
@@ -13452,7 +13452,7 @@ USA
                 <token>than</token>
             </pattern>
             <message>Did you mean <suggestion>worse</suggestion>, the comparative of 'bad'?</message>
-            <short>Incorrect word</short>
+            <short>Adverb error</short>
             <example>Zynga estimated to be more <marker>worth</marker> than EA.</example>
             <example correction="worse">Is cloud hosting <marker>worth</marker> than hostgator?</example>
         </rule>
@@ -13465,7 +13465,7 @@ USA
                 <token postag="VBN"/>
             </pattern>
             <message>Did you mean <suggestion>yet</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Misspelling</short>
             <example correction="yet">That is not <marker>jet</marker> decided.</example>
         </rule>
         <rule id="YOUR_NN" name="your (you're)">
@@ -13841,7 +13841,7 @@ USA
                     <token postag="PRP"/>
                 </pattern>
                 <message>'Everyday' is an adjective, and the comma is missing. Did you mean <suggestion>every day, \3</suggestion>?</message>
-                <short>Adjective &amp; comma error</short>
+                <short>Compound word error</short>
                 <example>Every day, he gets up early.</example>
                 <example correction="Every day, he"><marker>Everyday he</marker> gets up early.</example>
             </rule>
@@ -13880,7 +13880,7 @@ USA
                 <token regexp="yes">try|holiday|vacation|day|conference</token>
             </pattern>
             <message>Did you mean <suggestion>nice</suggestion> (=pleasant)?</message>
-            <short>Incorrect word</short>
+            <short>Noun error</short>
             <example correction="nice">I wish you a <marker>niece</marker> holiday.</example>
         </rule>
     </category>
@@ -13910,7 +13910,7 @@ USA
                 <token><exception postag="NN.*|DT|CD" postag_regexp="yes"/></token>
             </pattern>
             <message>Did you mean <suggestion>sense</suggestion>?</message>
-            <short>Incorrect word</short>
+            <short>Noun/preposition error</short>
             <example correction="sense">Something like 90 most likely never makes <marker>since</marker>.</example>
             <example>There have been three made <marker>since</marker> the launch.</example>
             <example>Many changes have been made <marker>since</marker> my previous visit.</example>
@@ -13981,7 +13981,7 @@ USA
                 <token>adapter</token>
             </pattern>
             <message>Did you mean <suggestion>early adopter</suggestion> (=someone who takes something early on)?</message>
-            <short>Incorrect word</short>
+            <short>Noun confusion</short>
             <example correction="early adopter">DualCore PC is available for purchase for selected companies in the <marker>early adapter</marker> program.</example>
         </rule>
         <rule id="FAR_BE_IT_FOR_ME" name="far be it for me (far be it from me)">
@@ -15884,7 +15884,7 @@ USA
                 <token postag="NN|NN:.*" postag_regexp="yes" regexp="yes">.{2,}<exception regexp="yes">today|yesterday|tomorrow|now|in|are</exception><exception postag="VBG|VB|VBP|VBD|VBN|RB|MD|IN|JJ.*|CC" postag_regexp="yes"/></token>
             </pattern>
             <message>You used three nouns after one another, and this might decrease readability. You might consider rewording the sentence.</message>
-            <short>Possibly bad style</short>
+            <short>Improper style</short>
             <example correction="">The <marker>security protection software</marker> we offer is the state-of-the art achievement.</example>
             <example>The security software we offer is the state-of-the art achievement.</example>
         </rule>
